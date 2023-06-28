@@ -1,0 +1,402 @@
+.home {
+    width: 100%;
+    height: auto;
+    padding: 12vw 0 25vw;
+
+    //banner
+    .banner {
+        width: 90%;
+        height: 40vw;
+        margin: 2vw auto;
+    }
+
+    .flexGroup {
+        width: 90%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto 3vw;
+        
+        //marquee
+        .marqueeGroup {
+            width: 70%;
+            height: auto;
+            display: flex;
+            // @include marqueeStyle;
+        }
+
+        //熱門賽事
+        .hotBtn {
+            width: 22vw;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.8vw 1vw;
+            // @include hotbtn;
+            cursor: pointer;
+
+            i {
+                width: 5vw;
+                height: 5vw;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+        }
+    }
+    //金額 + 儲值
+    .moneyGroup {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2vw 0 5vw;
+
+        .walletGroup {
+            width: 100%;
+            height: auto;
+    
+            .id {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                padding-bottom: 2vw;
+    
+                p {
+                    // color: $userColor_1;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    padding-right: 2vw;
+                }
+    
+                .vip {
+                    width: 15vw;
+                    height: 6vw;
+                    // @include vipbtn;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    padding: 1.2vw;
+    
+                    i {
+                        width: 100%;
+                        height: 100%;
+                    }
+    
+                    em {
+                        font-size: 1rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .money {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+    
+                p {
+                    // color: $mainColor_3;
+                    font-size: 1.5rem;
+                    font-weight: bolder;
+                    padding-right: 2vw;
+                }
+    
+                i { 
+                    width: 5vw;
+                    height: 5vw;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    // color: $mainColor_3;
+                    // border: 0.5vw solid $mainColor_3;
+                    border-radius: 50%;
+                    text-align: center;
+                }
+            }
+        }
+        .transaction {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            li {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-left: 2vw;
+                cursor: pointer;
+
+                i {
+                    width: 9vw;
+                    height: 11vw;
+
+                    &.deposit {
+                        background-position-x: 25%;
+                    }
+                    &.drawing {
+                        background-position-x: 50%;
+                    }
+                    &.discount {
+                        background-position-x: 75%;
+                    }
+                    &.immediate {
+                        background-position-x: 100%;
+                    }
+                }
+
+                p {
+                    font-size: 0.8rem;
+                    font-weight: bold;
+                    white-space: nowrap;
+                    // color: $mainColor_2;
+                }
+            }
+        }
+    }
+    .mainGroup {
+        width: 90%;
+        height: auto;
+        display: flex;
+        margin: 0 auto;
+        
+        .market {
+            width: 100%;
+            height: auto;
+
+            ul {
+                width: 100%;
+                height: auto;
+
+                li {
+                    width: 15vw;
+                    height: 26.5vw;
+                    border-radius: 2vw;
+                    // border: 0.3vw solid $borderColor_1;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    // background: $boxBG_2;
+                    margin-top: 4vw;
+                    cursor: pointer;
+
+                    &.active {
+                        // background: $boxBG_1;
+                        position: relative;
+                        
+                        &::after {
+                            content: "";
+                            width: 15vw;
+                            height: 26.5vw;
+                            // background: $activeColor_1;
+                            border-radius: 2vw;
+                            // box-shadow: 0 0 2vw 0 $boxshadow_1;
+                            position: absolute;
+                            bottom: -2vw;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            z-index: -1;
+                        }
+                    }
+
+                    p {
+                        font-size: 1rem;
+                        font-weight: bold;
+                        // color: $mainColor_5;
+                        line-height: 1.2rem;
+
+                    }
+                    span {
+                        font-size: 1rem;
+                        font-weight: bold;
+                        padding-bottom: 2vw;
+                        // color: $mainColor_6;
+                    }
+                    em {
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        // color: $mainColor_4;
+                    }
+                }
+            }
+        }
+        .gameGroup {
+            width: 100%;
+            height: auto;
+
+            .gameItem {
+                width: 100%;
+                height: auto;
+
+                .gameBox {
+                    width: 72vw;
+                    height: 30vw;
+                    // background: $gameBg_1;
+                    margin-bottom: 3vw;
+                    // border: 0.3vw solid $borderColor_1;
+                    border-radius: 2vw;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    // box-shadow: 0vw 0vw 1vw 0vw $boxshadow_1;
+                    
+                    .triangle {
+                        width: 10vw;
+                        height: 10vw;
+                        position: absolute;
+                        top: -0.2vw;
+                        left: -0.2vw;
+                    }
+
+                    //成交量
+                    .turnover {
+                        width: 22vw;
+                        height: 22vw;
+                        // background: $turnoverBg_1;
+                        border-radius: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        flex-shrink: 0;
+                        margin: 2vw;
+
+                        &::before {
+                            content: "";
+                            width: 22vw;
+                            height: 22vw;
+                            transform: rotate(0deg);
+                            clip:rect(0 ,11vw ,11vw ,0);
+                            border-radius: 50%;
+                            // background: $turnoverBg_3;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                        }
+                        &::after {
+                            content: "";
+                            width: 18vw;
+                            height: 18vw;
+                            // background: $turnoverBg_2;
+                            border-radius: 50%;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                        }
+                        
+                        p {
+                            font-size: 0.75rem;
+                            font-weight: bold;
+                            // color: $turnoverColor_1;
+                            z-index: 1;
+                            padding-bottom: 1vw;
+                        }
+                        span {
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                            // color: $turnoverColor_2;
+                            z-index: 1;
+                        }
+                    }
+                    //日期
+                    .date {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .day {
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            
+                            p {
+                                font-size: 0.75rem;
+                                // color: $subColor_1;
+                                white-space: nowrap;
+                                padding-right: 2vw;
+                                transform: scale(0.9);
+                            }
+                            em {
+                                font-size: 0.75rem;
+                                // color: $subColor_2;
+                                white-space: nowrap;
+                                transform: scale(0.9);
+                            }
+                        }
+                        .teamGroup {
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            padding: 6vw 0 4vw;
+
+                            .team {
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+    
+                                p {
+                                    font-size: 1.2rem;
+                                    font-weight: bold;
+                                    // color: $teamColor_1;
+                                    white-space: nowrap;
+                                }
+    
+                                span {
+                                    font-size: 1rem;
+                                    font-weight: bold;
+                                    // color: $subColor_3;
+                                }
+                            }
+                            .vs {
+                                font-size: 1rem;
+                                font-weight: bold;
+                                // color: $subColor_4;
+                                padding: 0 3vw;
+
+                            }
+                        }
+                        .gameName {
+                            width: 100%;
+                            height: auto;
+                            text-align: center;
+                            
+                            em {
+                                font-size: 1.2rem;
+                                font-weight: bold;
+                                // color: $subColor_5;
+                            }
+                        }
+                    }
+                    .btTriangle {
+                        width: 10vw;
+                        height: 10vw;
+                        position: absolute;
+                        bottom: -0.2vw;
+                        right: -0.2vw;
+
+                    }
+                }
+            }
+        }
+    }
+}

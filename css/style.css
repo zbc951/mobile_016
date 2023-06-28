@@ -1,0 +1,760 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  font-family: "微軟正黑體";
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: "微軟正黑體";
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0px;
+  font-family: "微軟正黑體";
+}
+
+select, input {
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  font-family: "微軟正黑體";
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+main {
+  display: block;
+}
+
+html, body {
+  width: 100%;
+  height: auto;
+}
+
+i {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+img {
+  display: block;
+}
+
+label {
+  display: block;
+}
+
+aside .colorGroup ul .claret {
+  background: #6c1817;
+  color: #ffffff;
+}
+
+aside .colorGroup ul .gold {
+  background: #fff4ca;
+  color: #000000;
+}
+
+aside .colorGroup ul .gray {
+  background: #d9d9d9;
+  color: #000000;
+}
+
+aside .colorGroup ul .green {
+  background: #107f8a;
+  color: #ffffff;
+}
+
+aside .colorGroup ul .pink {
+  background: #fc7e6f;
+  color: #ffffff;
+}
+
+aside .colorGroup ul .red {
+  background: -webkit-gradient(linear, left top, right top, from(#bf0014), to(#880002));
+  background: linear-gradient(to right, #bf0014 0%, #880002 100%);
+  color: #ffffff;
+}
+
+aside .colorGroup ul .blue {
+  background: #415556;
+  color: #ffffff;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 4vw;
+}
+html body {
+  width: 100%;
+  height: auto;
+  overflow: overlay;
+  position: relative;
+}
+html body header {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+html body header .top {
+  width: 100%;
+  height: 10.8333333333vw;
+  border-radius: 0 0 3.3333333333vw 3.3333333333vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 4vw;
+}
+html body header .top li {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  cursor: pointer;
+}
+html body header .top li.menu {
+  width: auto;
+  height: auto;
+}
+html body header .top li.menu p {
+  width: 5vw;
+  height: 5vw;
+  font-size: 1.25rem;
+}
+html body header .top li.logo {
+  width: auto;
+  height: auto;
+}
+html body header .top li.logo p {
+  font-size: 1.5625rem;
+}
+html body header .top li.circular {
+  width: auto;
+  height: auto;
+}
+html body header .top li.circular i {
+  width: 5vw;
+  height: 5vw;
+}
+html body .home {
+  width: 100%;
+  height: auto;
+  padding: 12vw 0 25vw;
+}
+html body .home .banner {
+  width: 90%;
+  height: 40vw;
+  margin: 2vw auto;
+}
+html body .home .flexGroup {
+  width: 90%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto 3vw;
+}
+html body .home .flexGroup .marqueeGroup {
+  width: 70%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .home .flexGroup .hotBtn {
+  width: 22vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.8vw 1vw;
+  cursor: pointer;
+}
+html body .home .flexGroup .hotBtn i {
+  width: 5vw;
+  height: 5vw;
+}
+html body .home .flexGroup .hotBtn p {
+  font-size: 0.8rem;
+}
+html body .home .moneyGroup {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2vw 0 5vw;
+}
+html body .home .moneyGroup .walletGroup {
+  width: 100%;
+  height: auto;
+}
+html body .home .moneyGroup .walletGroup .id {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2vw;
+}
+html body .home .moneyGroup .walletGroup .id p {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-right: 2vw;
+}
+html body .home .moneyGroup .walletGroup .id .vip {
+  width: 15vw;
+  height: 6vw;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.2vw;
+}
+html body .home .moneyGroup .walletGroup .id .vip i {
+  width: 100%;
+  height: 100%;
+}
+html body .home .moneyGroup .walletGroup .id .vip em {
+  font-size: 1rem;
+  font-weight: bold;
+}
+html body .home .moneyGroup .walletGroup .money {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .home .moneyGroup .walletGroup .money p {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding-right: 2vw;
+}
+html body .home .moneyGroup .walletGroup .money i {
+  width: 5vw;
+  height: 5vw;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
+}
+html body .home .moneyGroup .transaction {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .home .moneyGroup .transaction li {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 2vw;
+  cursor: pointer;
+}
+html body .home .moneyGroup .transaction li i {
+  width: 9vw;
+  height: 11vw;
+}
+html body .home .moneyGroup .transaction li i.deposit {
+  background-position-x: 25%;
+}
+html body .home .moneyGroup .transaction li i.drawing {
+  background-position-x: 50%;
+}
+html body .home .moneyGroup .transaction li i.discount {
+  background-position-x: 75%;
+}
+html body .home .moneyGroup .transaction li i.immediate {
+  background-position-x: 100%;
+}
+html body .home .moneyGroup .transaction li p {
+  font-size: 0.8rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+html body .home .mainGroup {
+  width: 90%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+html body .home .mainGroup .market {
+  width: 100%;
+  height: auto;
+}
+html body .home .mainGroup .market ul {
+  width: 100%;
+  height: auto;
+}
+html body .home .mainGroup .market ul li {
+  width: 15vw;
+  height: 26.5vw;
+  border-radius: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 4vw;
+  cursor: pointer;
+}
+html body .home .mainGroup .market ul li.active {
+  position: relative;
+}
+html body .home .mainGroup .market ul li.active::after {
+  content: "";
+  width: 15vw;
+  height: 26.5vw;
+  border-radius: 2vw;
+  position: absolute;
+  bottom: -2vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -1;
+}
+html body .home .mainGroup .market ul li p {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.2rem;
+}
+html body .home .mainGroup .market ul li span {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 2vw;
+}
+html body .home .mainGroup .market ul li em {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+html body .home .mainGroup .gameGroup {
+  width: 100%;
+  height: auto;
+}
+html body .home .mainGroup .gameGroup .gameItem {
+  width: 100%;
+  height: auto;
+}
+html body .home .mainGroup .gameGroup .gameItem .gameBox {
+  width: 72vw;
+  height: 30vw;
+  margin-bottom: 3vw;
+  border-radius: 2vw;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+html body .home .mainGroup .gameGroup .gameItem .gameBox .triangle {
+  width: 10vw;
+  height: 10vw;
+  position: absolute;
+  top: -0.2vw;
+  left: -0.2vw;
+}
+html body .home .mainGroup .gameGroup .gameItem .gameBox .turnover {
+  width: 22vw;
+  height: 22vw;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 2vw;
+}
+html body .home .mainGroup .gameGroup .gameItem .gameBox .turnover::before {
+  content: "";
+  width: 22vw;
+  height: 22vw;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  clip: rect(0, 11vw, 11vw, 0);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+html body .home .mainGroup .gameGroup .gameItem .gameBox .turnover::after {
+  content: "";
+  width: 18vw;
+  height: 18vw;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+html body .home .mainGroup .gameGroup .gameItem .gameBox .turnover p {
+  font-size: 0.75rem;
+  font-weight: bold;
+  z-index: 1;
+  padding-bottom: 1vw;
+}
+html body .home .mainGroup .gameGroup .gameItem .gameBox .turnover span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  z-index: 1;
+}
+html body .home .mainGroup .gameGroup .gameItem .gameBox .date {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .home .mainGroup .gameGroup .gameItem .gameBox .date .day {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .home .mainGroup .gameGroup .gameItem .gameBox .date .day p {
+  font-size: 0.75rem;
+  white-space: nowrap;
+  padding-right: 2vw;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+html body .home .mainGroup .gameGroup .gameItem .gameBox .date .day em {
+  font-size: 0.75rem;
+  white-space: nowrap;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+html body .home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 6vw 0 4vw;
+}
+html body .home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .team {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .team p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+html body .home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .team span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+html body .home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .vs {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0 3vw;
+}
+html body .home .mainGroup .gameGroup .gameItem .gameBox .date .gameName {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+html body .home .mainGroup .gameGroup .gameItem .gameBox .date .gameName em {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+html body .home .mainGroup .gameGroup .gameItem .gameBox .btTriangle {
+  width: 10vw;
+  height: 10vw;
+  position: absolute;
+  bottom: -0.2vw;
+  right: -0.2vw;
+}
+html body footer {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+html body footer .footerGroup {
+  width: 100%;
+  height: 18vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+html body footer .footerGroup li {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5vw;
+  cursor: pointer;
+}
+html body footer .footerGroup li i {
+  width: 5vw;
+  height: 5vw;
+  margin-bottom: 1vw;
+}
+html body footer .footerGroup li i.homeIc {
+  background-position-x: 0%;
+}
+html body footer .footerGroup li i.market {
+  background-position-x: 25%;
+}
+html body footer .footerGroup li i.deal {
+  background-position-x: 50%;
+}
+html body footer .footerGroup li i.accounts {
+  background-position-x: 75%;
+}
+html body footer .footerGroup li i.personal {
+  background-position-x: 100%;
+}
+html body footer .footerGroup li p {
+  font-size: 0.75rem;
+}
+html .bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}
+html aside {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  bottom: 15vw;
+  left: 2vw;
+  z-index: 999;
+}
+html aside .colorGroup {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+html aside .colorGroup span {
+  font-size: 0.75rem;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+html aside .colorGroup ul {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 12vw;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html aside .colorGroup ul li {
+  width: 6vw;
+  height: 6vw;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2vw;
+  margin: 0 1vw;
+  border-radius: 1vw;
+}
+html aside .colorGroup ul li.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html aside .colorGroup ul li p {
+  font-size: 0.75rem;
+  font-weight: bold;
+}

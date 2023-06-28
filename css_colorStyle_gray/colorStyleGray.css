@@ -1,0 +1,249 @@
+.home .flexGroup .marqueeGroup {
+  background: #ffffff;
+  border-radius: 2vw;
+  -webkit-box-shadow: 0.1vw 0.1vw 3vw 0.1vw rgba(255, 255, 255, 0.5);
+          box-shadow: 0.1vw 0.1vw 3vw 0.1vw rgba(255, 255, 255, 0.5);
+}
+.home .flexGroup .marqueeGroup .marquee_ic {
+  width: 5vw;
+  height: 5vw;
+  margin: 0 1.5vw;
+}
+.home .flexGroup .marqueeGroup .marquee {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.home .flexGroup .marqueeGroup .marquee p {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding-left: 100%;
+  white-space: nowrap;
+  color: #415556;
+  -webkit-animation: marquee 10s linear 0s infinite;
+          animation: marquee 10s linear 0s infinite;
+}
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+@keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.home .flexGroup .hotBtn {
+  color: #bd1f57;
+  background: -webkit-gradient(linear, left top, right top, from(#c3c3c3), color-stop(52%, #ffffff), to(#a0a0a0));
+  background: linear-gradient(to right, #c3c3c3 0%, #ffffff 52%, #a0a0a0 100%);
+  border: 0.2vw solid #ffffff;
+  border-radius: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .moneyGroup .walletGroup .id .vip {
+  color: #b70f53;
+  background: -webkit-gradient(linear, left top, right top, from(#b0b0b0), color-stop(52%, #ffffff), to(#acacac));
+  background: linear-gradient(to right, #b0b0b0 0%, #ffffff 52%, #acacac 100%);
+  border: 0.2vw solid #ffffff;
+  border-radius: 1vw;
+}
+
+html aside .colorGroup {
+  background: -webkit-gradient(linear, left top, right top, from(#caa574), color-stop(29%, #fff1c5), color-stop(74%, #ddc091), to(#caac7e));
+  background: linear-gradient(to right, #caa574 0%, #fff1c5 29%, #ddc091 74%, #caac7e 100%);
+  -webkit-box-shadow: 0.1vw 0.1vw 2vw 0.1vw rgba(0, 0, 0, 0.7254901961);
+          box-shadow: 0.1vw 0.1vw 2vw 0.1vw rgba(0, 0, 0, 0.7254901961);
+}
+
+html aside .colorGroup span {
+  color: #e0003a;
+}
+
+header .top {
+  background: -webkit-gradient(linear, left top, right top, from(#caa574), color-stop(29%, #fff1c5), color-stop(74%, #ddc091), to(#caac7e));
+  background: linear-gradient(to right, #caa574 0%, #fff1c5 29%, #ddc091 74%, #caac7e 100%);
+  -webkit-box-shadow: 0.2vw 0.2vw 2vw 0.5vw rgba(0, 0, 0, 0.7254901961);
+          box-shadow: 0.2vw 0.2vw 2vw 0.5vw rgba(0, 0, 0, 0.7254901961);
+}
+
+header .top .menu p {
+  color: #2b2b2b;
+}
+
+header .top .logo p {
+  color: #2b2b2b;
+}
+
+.home .moneyGroup .walletGroup .id p {
+  color: #ffdf79;
+}
+
+.home .moneyGroup .walletGroup .money p {
+  color: #fff1c5;
+}
+
+.home .moneyGroup .walletGroup .money i {
+  color: #fff1c5;
+  border: 0.5vw solid #fff1c5;
+}
+
+.home .moneyGroup .transaction li p {
+  color: #fff1c5;
+}
+
+.home .mainGroup .market ul li {
+  border: 0.3vw solid #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#dadada), to(#ffffff));
+  background: linear-gradient(to bottom, #dadada 0%, #ffffff 100%);
+}
+
+.home .mainGroup .market ul .active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#d3d3d3), to(#ffffff));
+  background: linear-gradient(to bottom, #d3d3d3 0%, #ffffff 100%);
+}
+
+.home .mainGroup .market ul .active::after {
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(39%, #cbcbcb), color-stop(76%, #707070), to(#353535));
+  background: linear-gradient(to right, #ffffff 0%, #cbcbcb 39%, #707070 76%, #353535 100%);
+  -webkit-box-shadow: 0 0 2vw 0 rgba(0, 0, 0, 0.7254901961);
+          box-shadow: 0 0 2vw 0 rgba(0, 0, 0, 0.7254901961);
+}
+
+.home .mainGroup .market ul li p {
+  color: #e0003a;
+}
+
+.home .mainGroup .market ul li span {
+  color: #b30a33;
+}
+
+.home .mainGroup .market ul li em {
+  color: #cf7600;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox {
+  background: -webkit-gradient(linear, left bottom, left top, from(#f6f0e3), to(#fffae9));
+  background: linear-gradient(to top, #f6f0e3 0%, #fffae9 100%);
+  border: 0.3vw solid #ffffff;
+  -webkit-box-shadow: 0vw 0vw 1vw 0vw rgba(0, 0, 0, 0.7254901961);
+          box-shadow: 0vw 0vw 1vw 0vw rgba(0, 0, 0, 0.7254901961);
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover {
+  background: linear-gradient(-45deg, #f92474 0%, #a6004a 60%, #740033 100%);
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover::before {
+  background: #cecece;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover::after {
+  background: #ffffff;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover p {
+  color: #ad0041;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover span {
+  color: #362100;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .day p {
+  color: #6d0001;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .day em {
+  color: #646464;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .team p {
+  color: #2e1d00;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .team span {
+  color: #ff2030;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .vs {
+  color: #2c63ff;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .gameName em {
+  color: #845305;
+}
+
+footer .footerGroup li p {
+  color: #2b2b2b;
+}
+
+body .bg {
+  background: url("../img/gray/bgGray.jpg") no-repeat center;
+  background-size: cover;
+}
+
+header .top .circular i {
+  background: url("../img/gray/circularGray.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .banner {
+  background: url("../img/gray/bannerGray.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .flexGroup .marqueeGroup .marquee_ic {
+  background: url("../img/gray/marqueeIcGray.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .moneyGroup .transaction li i {
+  background: url("../img/gray/walleticGray.png") no-repeat;
+  background-size: 500%;
+}
+
+footer .footerGroup li i {
+  background: url("../img/gray/footericGray.png") no-repeat;
+  background-size: 500%;
+}
+
+footer .footerGroup {
+  background: url("../img/gray/footbgGray.png") no-repeat center;
+  background-size: cover;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .triangle {
+  background: url("../img/gray/trianglelGray.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .btTriangle {
+  background: url("../img/gray/trianglerGray.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .walletGroup .id .vip i {
+  background: url("../img/gray/vipGray.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .flexGroup .hotBtn i {
+  background: url("../img/gray/hoticGray.png") no-repeat center;
+  background-size: contain;
+}

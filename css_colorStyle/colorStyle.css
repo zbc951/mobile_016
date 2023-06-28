@@ -1,0 +1,244 @@
+.home .flexGroup .marqueeGroup {
+  background: #ffffff;
+  border-radius: 2vw;
+  border: 0.3vw solid #415556;
+}
+.home .flexGroup .marqueeGroup .marquee_ic {
+  width: 5vw;
+  height: 5vw;
+  margin: 0 1.5vw;
+}
+.home .flexGroup .marqueeGroup .marquee {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.home .flexGroup .marqueeGroup .marquee p {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding-left: 100%;
+  white-space: nowrap;
+  color: #415556;
+  -webkit-animation: marquee 10s linear 0s infinite;
+          animation: marquee 10s linear 0s infinite;
+}
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+@keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.home .flexGroup .hotBtn {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(#fc696e), color-stop(84%, #c63a3e));
+  background: linear-gradient(to right, #fc696e 0%, #c63a3e 84%);
+  border: 0.3vw solid #e42729;
+  border-radius: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .moneyGroup .walletGroup .id .vip {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(#ff8a00), color-stop(84%, #ff8a00));
+  background: linear-gradient(to right, #ff8a00 0%, #ff8a00 84%);
+  border: 0.3vw solid #ffffff;
+  border-radius: 1vw;
+}
+
+html aside .colorGroup {
+  background: #415556;
+  -webkit-box-shadow: 0.1vw 0.1vw 2vw 0.1vw #818181;
+          box-shadow: 0.1vw 0.1vw 2vw 0.1vw #818181;
+}
+
+html aside .colorGroup span {
+  color: #ffffff;
+}
+
+header .top {
+  background: #415556;
+  -webkit-box-shadow: 0.2vw 0.2vw 2vw 0.5vw #818181;
+          box-shadow: 0.2vw 0.2vw 2vw 0.5vw #818181;
+}
+
+header .top .menu p {
+  color: #ffffff;
+}
+
+header .top .logo p {
+  color: #ffffff;
+}
+
+.home .moneyGroup .walletGroup .id p {
+  color: #0092a0;
+}
+
+.home .moneyGroup .walletGroup .money p {
+  color: #415556;
+}
+
+.home .moneyGroup .walletGroup .money i {
+  color: #415556;
+  border: 0.5vw solid #415556;
+}
+
+.home .moneyGroup .transaction li p {
+  color: #0092a0;
+}
+
+.home .mainGroup .market ul li {
+  border: 0.3vw solid #006766;
+  background: #ffffff;
+}
+
+.home .mainGroup .market ul .active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#568f8f), to(#5cc3c2));
+  background: linear-gradient(to top, #568f8f 0%, #5cc3c2 100%);
+}
+
+.home .mainGroup .market ul .active::after {
+  background: #006866;
+  -webkit-box-shadow: 0 0 2vw 0 #818181;
+          box-shadow: 0 0 2vw 0 #818181;
+}
+
+.home .mainGroup .market ul li p {
+  color: #ffffff;
+}
+
+.home .mainGroup .market ul li span {
+  color: #415556;
+}
+
+.home .mainGroup .market ul li em {
+  color: #11dfdd;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox {
+  background: #ffffff;
+  border: 0.3vw solid #006766;
+  -webkit-box-shadow: 0vw 0vw 1vw 0vw #818181;
+          box-shadow: 0vw 0vw 1vw 0vw #818181;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff9495), to(#e75459));
+  background: linear-gradient(to bottom, #ff9495 0%, #e75459 100%);
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover::before {
+  background: #637c7d;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover::after {
+  background: #ffffff;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover p {
+  color: #cc2427;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover span {
+  color: #415556;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .day p {
+  color: #838383;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .day em {
+  color: #6bb0af;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .team p {
+  color: #2a5254;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .team span {
+  color: #ff8a00;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .vs {
+  color: #004ae0;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .gameName em {
+  color: #ff7576;
+}
+
+footer .footerGroup li p {
+  color: #ffffff;
+}
+
+body .bg {
+  background: url("../img/blue/bg.png") no-repeat center;
+  background-size: cover;
+}
+
+header .top .circular i {
+  background: url("../img/blue/circular.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .banner {
+  background: url("../img/blue/banner.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .flexGroup .marqueeGroup .marquee_ic {
+  background: url("../img/blue/marquee_ic.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .moneyGroup .transaction li i {
+  background: url("../img/blue/wallet_ic.png") no-repeat;
+  background-size: 500%;
+}
+
+footer .footerGroup li i {
+  background: url("../img/blue/footer_ic.png") no-repeat;
+  background-size: 500%;
+}
+
+footer .footerGroup {
+  background: url("../img//blue/footbg.png") no-repeat center;
+  background-size: cover;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .triangle {
+  background: url("../img/blue/trianglel.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .btTriangle {
+  background: url("../img/blue/triangler.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .flexGroup .hotBtn i {
+  background: url("../img/blue/hot_ic.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .walletGroup .id .vip i {
+  background: url("../img/blue/vip.png") no-repeat center;
+  background-size: contain;
+}
