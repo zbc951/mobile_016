@@ -25,30 +25,42 @@ html {
         width: 100%;
         height: auto;
         position: fixed;
-        bottom: 15vw;
-        left: 2vw;
+        bottom: 15.5vw;
+        left: 4vw;
         z-index: 999;
+        
 
         .colorGroup {
-            width: 10vw;
-            height: 10vw;
+            width: auto;
+            height: auto;
             // background: $mainBg_1;
-            border-radius: 50%;
+            // border-radius: 50%;
             cursor: pointer;
             position: relative;
+            display: flex;
 
-            span {
-                font-size: 0.75rem;
-                font-weight: bold;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+            button {
+                width: 10vw;
+                height: 10vw;
+                border-radius: 50%;
+                position: relative;
+
+                span {
+                    font-size: 0.75rem;
+                    font-weight: bold;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
             }
+
             ul {
-                width: 100%;
+                width: 80%;
                 height: auto;
-                display: flex;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(6vw, 1fr));
+                gap: 1vw;
                 position: absolute;
                 top: 50%;
                 left: 12vw;

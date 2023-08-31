@@ -1,0 +1,336 @@
+.home .flexGroup .marqueeGroup {
+  background: #ffffff;
+  border-radius: 2vw;
+  border: 0.3vw solid #12374e;
+  -webkit-box-shadow: 0.1vw 0.1vw 3vw 0.1vw rgba(255, 255, 255, 0.5);
+          box-shadow: 0.1vw 0.1vw 3vw 0.1vw rgba(255, 255, 255, 0.5);
+}
+.home .flexGroup .marqueeGroup .marquee_ic {
+  width: 5vw;
+  height: 5vw;
+  margin: 0 1.5vw;
+}
+.home .flexGroup .marqueeGroup .marquee {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.home .flexGroup .marqueeGroup .marquee p {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding-left: 100%;
+  white-space: nowrap;
+  color: #556578;
+  -webkit-animation: marquee 10s linear 0s infinite;
+          animation: marquee 10s linear 0s infinite;
+}
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+@keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.home .flexGroup .hotBtn {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(#ff3600), to(#98030a));
+  background: linear-gradient(to right, #ff3600 0%, #98030a 100%);
+  border: 0.3vw solid #db7d58;
+  border-radius: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .moneyGroup .walletGroup .id .vip {
+  color: #ffffff;
+  background: -webkit-gradient(linear, right top, left top, from(#ff3300), to(#fdaa59));
+  background: linear-gradient(to left, #ff3300 0%, #fdaa59 100%);
+  border: 0.3vw solid #ffeadf;
+  border-radius: 1vw;
+}
+
+aside .colorGroup button {
+  background: #ea6119;
+  -webkit-box-shadow: 0.1vw 0.1vw 2vw 0.1vw #818181;
+          box-shadow: 0.1vw 0.1vw 2vw 0.1vw #818181;
+}
+
+aside .colorGroup span {
+  color: #ffffff;
+}
+
+header .top {
+  background: #ea6119;
+  -webkit-box-shadow: 0.2vw 0.2vw 2vw 0.5vw #818181;
+          box-shadow: 0.2vw 0.2vw 2vw 0.5vw #818181;
+}
+
+header .top .circular::after {
+  background: #0068db;
+}
+
+header .top .menuGroup .line .menu {
+  background: #cfd5e9;
+}
+
+header .top .menuGroup .line .menu::before {
+  background: #cfd5e9;
+}
+
+header .top .menuGroup .line .menu::after {
+  background: #cfd5e9;
+}
+
+header .top .logo p {
+  color: #cfd5e9;
+}
+
+.home .moneyGroup .walletGroup .id p {
+  color: #bad6ff;
+}
+
+.home .moneyGroup .walletGroup .money p {
+  color: #60a8ff;
+}
+
+.home .moneyGroup .walletGroup .money i {
+  color: #60a8ff;
+  border: 0.5vw solid #60a8ff;
+}
+
+.home .moneyGroup .transaction li p {
+  color: #ffc9b1;
+}
+
+.home .mainGroup .market ul li {
+  border: 0.3vw solid #e75000;
+  background: #ffffff;
+}
+
+.home .mainGroup .market ul .active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff7b38), to(#df530f));
+  background: linear-gradient(to top, #ff7b38 0%, #df530f 100%);
+}
+
+.home .mainGroup .market ul .active::after {
+  background: -webkit-gradient(linear, left top, right top, from(#d25716), color-stop(41%, #fe7d3b), color-stop(76%, #ffe1d1), to(#db672a));
+  background: linear-gradient(to right, #d25716 0%, #fe7d3b 41%, #ffe1d1 76%, #db672a 100%);
+  -webkit-box-shadow: 0 0 2vw 0 #818181;
+          box-shadow: 0 0 2vw 0 #818181;
+}
+
+.home .mainGroup .market ul li p {
+  color: #ffffff;
+}
+
+.home .mainGroup .market ul li span {
+  color: #eb621a;
+}
+
+.home .mainGroup .market ul li em {
+  color: #37649b;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox {
+  background: #ffffff;
+  border: 0.3vw solid #54462c;
+  -webkit-box-shadow: 0vw 0vw 1vw 0vw #818181;
+          box-shadow: 0vw 0vw 1vw 0vw #818181;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#f05300), to(#ff8033));
+  background: linear-gradient(to top, #f05300 0%, #ff8033 100%);
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover::before {
+  background: #829ab7;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover::after {
+  background: #ffffff;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover p {
+  color: #1e4b81;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover span {
+  color: #333333;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .day p {
+  color: #6a9ad3;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .day em {
+  color: #395a83;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .team p {
+  color: #2c3e54;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .team span {
+  color: #002aff;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .vs {
+  color: #e62902;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .gameName em {
+  color: #0056b6;
+}
+
+footer .footerGroup li p {
+  color: #cfd5e9;
+}
+
+footer .footerGroup li .personal::after {
+  background: #0068db;
+}
+
+body .bg {
+  background: url("../img/orange-blue/bg.png");
+  background-size: cover;
+}
+
+.home .banner {
+  background: url("../img/orange-blue/banner.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .moneyGroup .transaction li i {
+  background: url("../img/orange-blue/wallet_ic.png") no-repeat;
+  background-size: 500%;
+}
+
+footer .footerGroup {
+  background: url("../img/orange-blue/footbg.png") no-repeat center;
+  background-size: cover;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .triangle {
+  background: url("../img/orange-blue/trianglel.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .btTriangle {
+  background: url("../img/orange-blue/triangler.png") no-repeat center;
+  background-size: contain;
+}
+
+svg.message_svg .cls-1 {
+  fill: none;
+  stroke: #cfd5e9;
+  stroke-miterlimit: 10;
+  stroke-width: 3px;
+}
+svg.message_svg .cls-2 {
+  fill: #cfd5e9;
+}
+svg.speaker_svg {
+  width: 5vw;
+  height: 5vw;
+  margin: 0 1.5vw;
+}
+svg.speaker_svg .cls-1 {
+  fill: url("#Gradient1");
+}
+svg.speaker_svg .stop1 {
+  stop-color: #72a6e5;
+}
+svg.speaker_svg .stop3 {
+  stop-color: #30598c;
+}
+svg.hot_svg {
+  width: 5vw;
+  height: 5vw;
+  -webkit-transform: translateY(-0.3vw);
+          transform: translateY(-0.3vw);
+}
+svg.hot_svg .cls-1 {
+  fill: #ffffff;
+}
+svg.vip_svg .cls-1 {
+  fill: #ffffff;
+}
+svg.home_svg, svg.money_svg, svg.details_svg, svg.history_svg, svg.member_svg {
+  width: 5vw;
+  height: 5vw;
+  margin-bottom: 1vw;
+  position: relative;
+}
+svg.home_svg .cls-1, svg.money_svg .cls-1, svg.details_svg .cls-1, svg.history_svg .cls-1, svg.member_svg .cls-1 {
+  fill: #cfd5e9;
+}
+svg.home_svg .cls-2, svg.money_svg .cls-2, svg.details_svg .cls-2, svg.history_svg .cls-2, svg.member_svg .cls-2 {
+  fill: #cfd5e9;
+}
+svg.home_svg .cls-3, svg.money_svg .cls-3, svg.details_svg .cls-3, svg.history_svg .cls-3, svg.member_svg .cls-3 {
+  fill: none;
+  stroke: #cfd5e9;
+}
+svg.money_svg .cls-1 {
+  stroke: #cfd5e9;
+  stroke-miterlimit: 10;
+  stroke-width: 0.5px;
+}
+
+.point {
+  position: relative;
+}
+.point::after {
+  content: "";
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  position: absolute;
+  top: -1.5vw;
+  right: -1.8vw;
+  background: #0068db;
+}
+
+html body footer .footerGroup li:hover > p, html body footer .footerGroup li:active > p, html body footer .footerGroup li.active > p {
+  color: #ff9c6a;
+}
+html body footer .footerGroup li:hover svg .cls-1, html body footer .footerGroup li:active svg .cls-1, html body footer .footerGroup li.active svg .cls-1 {
+  fill: url("#Gradient2");
+  stroke: none;
+}
+html body footer .footerGroup li:hover svg .cls-2, html body footer .footerGroup li:active svg .cls-2, html body footer .footerGroup li.active svg .cls-2 {
+  fill: url("#Gradient2");
+}
+html body footer .footerGroup li:hover svg .cls-3, html body footer .footerGroup li:active svg .cls-3, html body footer .footerGroup li.active svg .cls-3 {
+  fill: url("#Gradient2");
+  stroke: #ffffff;
+}
+html body footer .footerGroup li:hover svg .stop1, html body footer .footerGroup li:active svg .stop1, html body footer .footerGroup li.active svg .stop1 {
+  stop-color: #fdaa59;
+}
+html body footer .footerGroup li:hover svg .stop2, html body footer .footerGroup li:active svg .stop2, html body footer .footerGroup li.active svg .stop2 {
+  stop-color: #fdaa59;
+}
+html body footer .footerGroup li:hover svg .stop3, html body footer .footerGroup li:active svg .stop3, html body footer .footerGroup li.active svg .stop3 {
+  stop-color: #ea2b02;
+}
+html body footer .footerGroup li:hover svg .stop4, html body footer .footerGroup li:active svg .stop4, html body footer .footerGroup li.active svg .stop4 {
+  stop-color: #ea2b02;
+}

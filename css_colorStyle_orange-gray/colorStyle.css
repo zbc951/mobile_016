@@ -1,0 +1,321 @@
+.home .flexGroup .marqueeGroup {
+  background: #ffffff;
+  border-radius: 2vw;
+  border: 0.3vw solid #ffbe62;
+}
+.home .flexGroup .marqueeGroup .marquee {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.home .flexGroup .marqueeGroup .marquee p {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding-left: 100%;
+  white-space: nowrap;
+  color: #303e41;
+  -webkit-animation: marquee 10s linear 0s infinite;
+          animation: marquee 10s linear 0s infinite;
+}
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+@keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.home .flexGroup .hotBtn {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(#00ccc7), to(#008076));
+  background: linear-gradient(to right, #00ccc7 0%, #008076 100%);
+  border: 0.3vw solid #0ba5a0;
+  border-radius: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .moneyGroup .walletGroup .id .vip {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(#00ccc7), to(#008076));
+  background: linear-gradient(to right, #00ccc7 0%, #008076 100%);
+  border: 0.3vw solid #0ba5a0;
+  border-radius: 1vw;
+}
+
+aside .colorGroup button {
+  background: #f89720;
+  -webkit-box-shadow: 0.1vw 0.1vw 2vw 0.1vw #4c6689;
+          box-shadow: 0.1vw 0.1vw 2vw 0.1vw #4c6689;
+}
+
+aside .colorGroup span {
+  color: #ffffff;
+}
+
+header .top {
+  background: #f89720;
+  -webkit-box-shadow: 0.2vw 0.2vw 2vw 0.5vw #4c6689;
+          box-shadow: 0.2vw 0.2vw 2vw 0.5vw #4c6689;
+}
+
+header .top .circular::after {
+  background: #ffffff;
+}
+
+header .top .menuGroup .line .menu {
+  background: #979797;
+}
+
+header .top .menuGroup .line .menu::before {
+  background: #979797;
+}
+
+header .top .menuGroup .line .menu::after {
+  background: #979797;
+}
+
+header .top .logo p {
+  color: #ffffff;
+}
+
+.home .moneyGroup .walletGroup .id p {
+  color: #f3f3f3;
+}
+
+.home .moneyGroup .walletGroup .money p {
+  color: #ffbe62;
+}
+
+.home .moneyGroup .walletGroup .money i {
+  color: #b4b4b4;
+  border: 0.5vw solid #b4b4b4;
+}
+
+.home .moneyGroup .transaction li p {
+  color: #ffbe62;
+}
+
+.home .mainGroup .market ul li {
+  border: 0.3vw solid #fecd4c;
+  background: #303e41;
+}
+
+.home .mainGroup .market ul .active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ec7a00), to(#ffaa35));
+  background: linear-gradient(to top, #ec7a00 0%, #ffaa35 100%);
+  border-color: #ffc87a;
+}
+
+.home .mainGroup .market ul .active::after {
+  background: #ffb448;
+  -webkit-box-shadow: 0 0 2vw 0 #4c6689;
+          box-shadow: 0 0 2vw 0 #4c6689;
+  border-bottom: solid 0.2vw #4c6689;
+}
+
+.home .mainGroup .market ul li p {
+  color: #ffffff;
+}
+
+.home .mainGroup .market ul li span {
+  color: #ffffff;
+}
+
+.home .mainGroup .market ul li em {
+  color: #00c4be;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox {
+  background: #ffffff;
+  border: 0.3vw solid #fecd4c;
+  -webkit-box-shadow: 0vw 0vw 1vw 0vw #4c6689;
+          box-shadow: 0vw 0vw 1vw 0vw #4c6689;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#303e41), to(#365157));
+  background: linear-gradient(to top, #303e41 0%, #365157 100%);
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover::before {
+  background: #52c5c2;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover::after {
+  background: #ffffff;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover p {
+  color: #894700;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover span {
+  color: #2d4348;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .day p {
+  color: #535353;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .day em {
+  color: #52c5c2;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .team p {
+  color: #303e41;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .team span {
+  color: #ff0000;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .vs {
+  color: #ff5a00;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .gameName em {
+  color: #6740d5;
+}
+
+footer .footerGroup li p {
+  color: #ffffff;
+}
+
+footer .footerGroup li .point::after {
+  background: #ffffff;
+}
+
+body .bg {
+  background: url("../img/orange-gray/bg.png") no-repeat center;
+  background-size: cover;
+}
+
+header .top .circular i {
+  background: url("../img/orange-gray/circular.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .banner {
+  background: url("../img/orange-gray/banner.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .moneyGroup .transaction li i {
+  background: url("../img/orange-gray/wallet_ic.png") no-repeat;
+  background-size: 500%;
+}
+
+footer .footerGroup li i {
+  background: url("../img/orange-gray/footer_ic.png") no-repeat;
+  background-size: 500%;
+}
+
+footer .footerGroup {
+  background: url("../img/orange-gray/footbg.png") no-repeat center;
+  background-size: cover;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .triangle {
+  background: url("../img/orange-gray/trianglel.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .btTriangle {
+  background: url("../img/orange-gray/triangler.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .walletGroup .id .vip i {
+  background: url("../img/orange-gray/vip.png") no-repeat center;
+  background-size: contain;
+}
+
+html body .home .mainGroup .gameGroup .gameItem .gameBox .triangle {
+  top: 0VW;
+  left: 0vw;
+}
+
+html body .home .mainGroup .gameGroup .gameItem .gameBox .btTriangle {
+  bottom: 0vw;
+  right: 0vw;
+}
+
+html body .home .banner {
+  width: 92%;
+  height: 43vw;
+  margin-top: 0;
+}
+
+svg.speaker_svg .cls-1 {
+  fill: url("#Gradient1");
+}
+svg.speaker_svg .stop1 {
+  stop-color: #f8992f;
+}
+svg.speaker_svg .stop2 {
+  stop-color: #e57100;
+}
+svg.message_svg .cls-1 {
+  fill: none;
+  stroke: #404b4d;
+  stroke-miterlimit: 10;
+  stroke-width: 3px;
+}
+svg.message_svg .cls-2 {
+  fill: #404b4d;
+}
+svg.hot_svg .cls-1 {
+  fill: #ffffff;
+}
+svg.vip_svg .cls-1 {
+  fill: #ffffff;
+}
+svg.home_svg .cls-1, svg.money_svg .cls-1, svg.details_svg .cls-1, svg.history_svg .cls-1, svg.member_svg .cls-1 {
+  fill: #ffffff;
+}
+svg.home_svg .cls-2, svg.money_svg .cls-2, svg.details_svg .cls-2, svg.history_svg .cls-2, svg.member_svg .cls-2 {
+  fill: #ffffff;
+}
+svg.home_svg .cls-3, svg.money_svg .cls-3, svg.details_svg .cls-3, svg.history_svg .cls-3, svg.member_svg .cls-3 {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+svg.money_svg .cls-1 {
+  stroke: #ffffff;
+  stroke-miterlimit: 10;
+  stroke-width: 0.5px;
+}
+
+html body footer .footerGroup li:hover > p, html body footer .footerGroup li:active > p, html body footer .footerGroup li.active > p {
+  color: #283437;
+}
+html body footer .footerGroup li:hover svg .cls-1, html body footer .footerGroup li:active svg .cls-1, html body footer .footerGroup li.active svg .cls-1 {
+  fill: #283437;
+  stroke: none;
+}
+html body footer .footerGroup li:hover svg .cls-2, html body footer .footerGroup li:active svg .cls-2, html body footer .footerGroup li.active svg .cls-2 {
+  fill: #283437;
+}
+html body footer .footerGroup li:hover svg .cls-3, html body footer .footerGroup li:active svg .cls-3, html body footer .footerGroup li.active svg .cls-3 {
+  fill: #283437;
+  stroke: none;
+}
+html body footer .footerGroup li:hover svg.money_svg .cls-1, html body footer .footerGroup li:active svg.money_svg .cls-1, html body footer .footerGroup li.active svg.money_svg .cls-1 {
+  stroke: #283437;
+}

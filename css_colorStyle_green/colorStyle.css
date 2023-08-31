@@ -1,0 +1,328 @@
+.home .flexGroup .marqueeGroup {
+  background: #ffffff;
+  border-radius: 2vw;
+  border: 0.2vw solid #ffd985;
+  -webkit-box-shadow: 0.1vw 0.1vw 3vw 0.1vw rgba(0, 0, 0, 0.5);
+          box-shadow: 0.1vw 0.1vw 3vw 0.1vw rgba(0, 0, 0, 0.5);
+}
+.home .flexGroup .marqueeGroup .marquee_ic {
+  width: 5vw;
+  height: 5vw;
+  margin: 0 1.5vw;
+}
+.home .flexGroup .marqueeGroup .marquee {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.home .flexGroup .marqueeGroup .marquee p {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding-left: 100%;
+  white-space: nowrap;
+  color: #1a1a1a;
+  -webkit-animation: marquee 10s linear 0s infinite;
+          animation: marquee 10s linear 0s infinite;
+}
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+@keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.home .flexGroup .hotBtn {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(#fad43e), to(#ff3c00));
+  background: linear-gradient(to right, #fad43e 0%, #ff3c00 100%);
+  border: 0.2vw solid #ffdfb1;
+  border-radius: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .moneyGroup .walletGroup .id .vip {
+  color: #2b2b2b;
+  background: -webkit-gradient(linear, left top, right top, from(#b0b0b0), color-stop(52%, #ffffff), to(#acacac));
+  background: linear-gradient(to right, #b0b0b0 0%, #ffffff 52%, #acacac 100%);
+  border: 0.2vw solid #ffffff;
+  border-radius: 1vw;
+}
+
+html aside .colorGroup button {
+  background: -webkit-gradient(linear, left top, right top, from(#caa574), color-stop(29%, #fff1c5), color-stop(74%, #ddc091), to(#caac7e));
+  background: linear-gradient(to right, #caa574 0%, #fff1c5 29%, #ddc091 74%, #caac7e 100%);
+  -webkit-box-shadow: 0.1vw 0.1vw 2vw 0.1vw rgba(0, 0, 0, 0.7137254902);
+          box-shadow: 0.1vw 0.1vw 2vw 0.1vw rgba(0, 0, 0, 0.7137254902);
+}
+
+html aside .colorGroup span {
+  color: #3d3d3d;
+}
+
+header .top {
+  background: -webkit-gradient(linear, left top, right top, from(#caa574), color-stop(29%, #fff1c5), color-stop(74%, #ddc091), to(#caac7e));
+  background: linear-gradient(to right, #caa574 0%, #fff1c5 29%, #ddc091 74%, #caac7e 100%);
+  -webkit-box-shadow: 0.2vw 0.2vw 2vw 0.5vw rgba(0, 0, 0, 0.7137254902);
+          box-shadow: 0.2vw 0.2vw 2vw 0.5vw rgba(0, 0, 0, 0.7137254902);
+}
+
+header .top .circular::after {
+  background: #ff6f17;
+}
+
+header .top .menuGroup .line .menu {
+  background: #034c52;
+}
+
+header .top .menuGroup .line .menu::before {
+  background: #034c52;
+}
+
+header .top .menuGroup .line .menu::after {
+  background: #034c52;
+}
+
+header .top .logo p {
+  color: #034c52;
+}
+
+.home .moneyGroup .walletGroup .id p {
+  color: #ffe79c;
+}
+
+.home .moneyGroup .walletGroup .money p {
+  color: #fff1c5;
+}
+
+.home .moneyGroup .walletGroup .money i {
+  color: #fff1c5;
+  border: 0.5vw solid #fff1c5;
+}
+
+.home .moneyGroup .transaction li p {
+  color: #fff1c5;
+}
+
+.home .mainGroup .market ul li {
+  border: 0.3vw solid #eed598;
+  background: #f7f7f7;
+}
+
+.home .mainGroup .market ul .active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#e0c997), color-stop(40%, #fff1c5), to(#fff9e8));
+  background: linear-gradient(to top, #e0c997 0%, #fff1c5 40%, #fff9e8 100%);
+}
+
+.home .mainGroup .market ul .active::after {
+  background: radial-gradient(ellipse at center, #9b7a2f 0%, #dfc07b 39%, #fff4cb 68%, #fffcf2 100%);
+  -webkit-box-shadow: 0 0 2vw 0 rgba(0, 0, 0, 0.7137254902);
+          box-shadow: 0 0 2vw 0 rgba(0, 0, 0, 0.7137254902);
+}
+
+.home .mainGroup .market ul li p {
+  color: #3d3d3d;
+}
+
+.home .mainGroup .market ul li span {
+  color: #3d3d3d;
+}
+
+.home .mainGroup .market ul li em {
+  color: #009dac;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox {
+  background: #ffffff;
+  border: 0.3vw solid #eed598;
+  -webkit-box-shadow: 0vw 0vw 1vw 0vw rgba(0, 0, 0, 0.7137254902);
+          box-shadow: 0vw 0vw 1vw 0vw rgba(0, 0, 0, 0.7137254902);
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#00a8a8), color-stop(53%, #03444a), to(#003034));
+  background: linear-gradient(to top, #00a8a8 0%, #03444a 53%, #003034 100%);
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover::before {
+  background: #dadada;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover::after {
+  background: #ffffff;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover p {
+  color: #212121;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover span {
+  color: #005c64;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .day p {
+  color: #018284;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .day em {
+  color: #646464;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .team p {
+  color: #252525;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .team span {
+  color: #cb1667;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .vs {
+  color: #5f5f5f;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .gameName em {
+  color: #ff6f17;
+}
+
+footer .footerGroup li p {
+  color: #034c52;
+}
+
+footer .footerGroup li .personal::after {
+  background: #ff6f17;
+}
+
+body .bg {
+  background: url("../img/green/bg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.home .banner {
+  background: url("../img/green/banner.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .moneyGroup .transaction li i {
+  background: url("../img/green/walletIc.png") no-repeat;
+  background-size: 500%;
+}
+
+footer .footerGroup {
+  background: url("../img/green/footbg.png") no-repeat center;
+  background-size: cover;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .triangle {
+  background: url("../img/green/trianglel.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .btTriangle {
+  background: url("../img/green/triangler.png") no-repeat center;
+  background-size: contain;
+}
+
+svg.message_svg .cls-1 {
+  fill: none;
+  stroke: #034c52;
+  stroke-miterlimit: 10;
+  stroke-width: 3px;
+}
+svg.message_svg .cls-2 {
+  fill: #034c52;
+}
+svg.speaker_svg {
+  width: 5vw;
+  height: 5vw;
+  margin: 0 1.5vw;
+}
+svg.speaker_svg .cls-1 {
+  fill: #dabc7e;
+}
+svg.hot_svg {
+  width: 5vw;
+  height: 5vw;
+  -webkit-transform: translateY(-0.3vw);
+          transform: translateY(-0.3vw);
+}
+svg.hot_svg .cls-1 {
+  fill: #ffffff;
+}
+svg.vip_svg .cls-1 {
+  fill: #2b2b2b;
+}
+svg.home_svg, svg.money_svg, svg.details_svg, svg.history_svg, svg.member_svg {
+  width: 5vw;
+  height: 5vw;
+  margin-bottom: 1vw;
+  position: relative;
+}
+svg.home_svg .cls-1, svg.money_svg .cls-1, svg.details_svg .cls-1, svg.history_svg .cls-1, svg.member_svg .cls-1 {
+  fill: #034c52;
+}
+svg.home_svg .cls-2, svg.money_svg .cls-2, svg.details_svg .cls-2, svg.history_svg .cls-2, svg.member_svg .cls-2 {
+  fill: #034c52;
+}
+svg.home_svg .cls-3, svg.money_svg .cls-3, svg.details_svg .cls-3, svg.history_svg .cls-3, svg.member_svg .cls-3 {
+  fill: none;
+  stroke: #034c52;
+}
+svg.money_svg .cls-1 {
+  stroke: #034c52;
+  stroke-miterlimit: 10;
+  stroke-width: 0.5px;
+}
+
+.point {
+  position: relative;
+}
+.point::after {
+  content: "";
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  position: absolute;
+  top: -1.5vw;
+  right: -1.8vw;
+  background: #ea6300;
+}
+
+html body footer .footerGroup li:hover > p, html body footer .footerGroup li:active > p, html body footer .footerGroup li.active > p {
+  color: #034c52;
+}
+html body footer .footerGroup li:hover svg .cls-1, html body footer .footerGroup li:active svg .cls-1, html body footer .footerGroup li.active svg .cls-1 {
+  fill: url("#home_svg_linear_3");
+  stroke: none;
+}
+html body footer .footerGroup li:hover svg .cls-2, html body footer .footerGroup li:active svg .cls-2, html body footer .footerGroup li.active svg .cls-2 {
+  fill: url("#home_svg_linear_3");
+}
+html body footer .footerGroup li:hover svg .cls-3, html body footer .footerGroup li:active svg .cls-3, html body footer .footerGroup li.active svg .cls-3 {
+  fill: url("#home_svg_linear_3");
+  stroke: none;
+}
+html body footer .footerGroup li:hover svg .stop1, html body footer .footerGroup li:active svg .stop1, html body footer .footerGroup li.active svg .stop1 {
+  stop-color: #003034;
+}
+html body footer .footerGroup li:hover svg .stop2, html body footer .footerGroup li:active svg .stop2, html body footer .footerGroup li.active svg .stop2 {
+  stop-color: #065b63;
+}
+html body footer .footerGroup li:hover svg .stop3, html body footer .footerGroup li:active svg .stop3, html body footer .footerGroup li.active svg .stop3 {
+  stop-color: #00a8a8;
+}

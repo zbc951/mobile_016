@@ -1,0 +1,442 @@
+//header
+$mainBg_1: linear-gradient(to left, #8f0a7d 0%, #9e37ee 100%);
+
+//左側 市場列表
+$boxBG_1: linear-gradient(to top, #32008f 0%, #bc48ed 50%, #f6e2ff 100%);
+$boxBG_2: linear-gradient(to bottom, #ededed 0%, #ffffff 10%, #f7f7f7 70%, #cecece 100%);
+$mainColor_4: #1571ef;
+$mainColor_5: #ffffff;
+$mainColor_6: #3d217e;
+$activeColor_1: linear-gradient(to right, #5c0058 0%, #650e60 10%, #b381fd 35%, #e2d6ff 45%, #e2d6ff 55%, #b381fd 75%, #650e60 90%, #5c0058 100%);
+
+
+//三角
+$ballColor_1: linear-gradient(to top, #ececec 0%, #ffffff 100%);
+$triangleColor_1: #5bb0af;
+
+//header + footer
+$mainColor_1: #ffffff;
+//wallet
+$mainColor_2: #eae3ff;
+$mainColor_3: #979797;
+
+//user
+$userColor_1: #c9eddb;
+
+//比賽
+$gameBg_1: #ffffff;
+
+//日期
+$subColor_1: #214d9d;
+//場次編號
+$subColor_2: #ae74e9;
+//隊伍
+$teamColor_1: #2b0065;
+//主場
+$subColor_3: #f19900;
+//VS
+$subColor_4: #767676;
+//聯賽
+$subColor_5: #1813e2;
+
+//邊框線
+$borderColor_1: #9f139b;
+$borderColor_2: #b724ae;
+$borderColor_3: #ffffff;
+
+$boxshadow_1: #292a8d;
+
+//成交量
+$turnoverBg_1: linear-gradient(to top, #4900cf 0%, #813dff 50%, #390daa 100%);
+$turnoverBg_2: #ffffff;
+$turnoverBg_3: #8be1d3;
+$turnoverColor_1: #1f51be;
+$turnoverColor_2: #444444;
+
+//訊息提醒 8/28
+$subColor_6: #9effd4;
+
+
+//marquee
+@mixin marqueeStyle {
+    background: #ffffff;
+    border-radius: 2vw;
+    border: 0.3vw solid #a036a7;
+    // box-shadow:0.1vw 0.1vw 3vw 0.1vw rgba(255, 255, 255, 0.5);
+
+    .marquee {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+
+        p {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: bold;
+            padding-left: 100%;
+            white-space: nowrap;
+            color: #5c5c5c;
+            animation: marquee 10s linear 0s infinite;
+        }
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+
+    }
+}
+
+.home .flexGroup .marqueeGroup {
+    @include marqueeStyle;
+}
+
+
+
+//熱門賽事
+@mixin hotbtn {
+    color: #ffffff;
+    background: linear-gradient(to right, #51cbb7 0%, #009078 100%);
+    border: 0.3vw solid #c7eedb;
+    border-radius: 2vw;
+    display: flex;
+}
+
+.home .flexGroup .hotBtn {
+    @include hotbtn;
+}
+
+//VIP
+@mixin vipbtn {
+    color: #ffffff;
+    background: linear-gradient(to right, #9cf6ca 0%, #00b597 100%);
+    border: 0.3vw solid #c7eedb;
+    border-radius: 1vw;
+}
+
+.home .moneyGroup .walletGroup .id .vip {
+    @include vipbtn;
+}
+
+
+//顏色
+
+//aside
+aside .colorGroup button {
+    background: $mainBg_1;
+    box-shadow: 0.1vw 0.1vw 2vw 0.1vw $boxshadow_1;
+}
+
+aside .colorGroup span {
+    color: $mainColor_5;
+}
+
+//header
+header .top {
+    background: $mainBg_1;
+    box-shadow: 0.2vw 0.2vw 2vw 0.5vw $boxshadow_1;
+}
+
+header .top .circular::after {
+    background: $subColor_6;
+}
+
+header .top .menuGroup .line .menu {
+    background: $mainColor_1;
+} 
+header .top .menuGroup .line .menu::before {
+    background: $mainColor_1;
+} 
+header .top .menuGroup .line .menu::after {
+    background: $mainColor_1;
+} 
+
+header .top .logo p {
+    color: $mainColor_1;
+}
+
+//home
+.home .moneyGroup .walletGroup .id p {
+    color: $userColor_1;
+}
+
+.home .moneyGroup .walletGroup .money p {
+    color: $mainColor_2
+}
+
+.home .moneyGroup .walletGroup .money i {
+    color: $mainColor_3;
+    border: 0.5vw solid $mainColor_3;
+}
+
+.home .moneyGroup .transaction li p {
+    color: $mainColor_2;
+}
+
+.home .mainGroup .market ul li {
+    border: 0.3vw solid $borderColor_1;
+    background: $boxBG_2;
+}
+
+.home .mainGroup .market ul .active {
+    background: $boxBG_1;
+    border-color: $borderColor_2;
+}
+
+.home .mainGroup .market ul .active::after {
+    background: $activeColor_1;
+    box-shadow: 0 0 2vw 0 $boxshadow_1;
+    // border-bottom: solid 0.2vw $borderColor_3;
+}
+
+.home .mainGroup .market ul li p {
+    color: $mainColor_5;
+}
+
+.home .mainGroup .market ul li span {
+    color: $mainColor_6;
+}
+
+.home .mainGroup .market ul li em {
+    color: $mainColor_4;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox {
+    background: $gameBg_1;
+    border: 0.3vw solid $borderColor_1;
+    box-shadow: 0vw 0vw 1vw 0vw $boxshadow_1;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover {
+    background: $turnoverBg_1;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover::before {
+    background: $turnoverBg_3;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover::after {
+    background: $turnoverBg_2;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover p {
+    color: $turnoverColor_1;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover span {
+    color: $turnoverColor_2;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .day p {
+    color: $subColor_1;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .day em {
+    color: $subColor_2;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .team p {
+    color: $teamColor_1;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .team span {
+    color: $subColor_3;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .vs {
+    color: $subColor_4;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .gameName em {
+    color: $subColor_5;
+}
+
+//footer
+footer .footerGroup li p {
+    color: $mainColor_1;
+}
+
+footer .footerGroup li .point::after {
+    background: $subColor_6;
+}
+
+//圖片
+
+//背景圖
+body .bg {
+    background: url("../img/purple-blue/bg.png") no-repeat center;
+    background-size: cover;
+}
+
+//header訊息通知
+header .top .circular i {
+    background: url("../img/purple-blue/circular.png") no-repeat center;
+    background-size: contain;
+}
+
+//banner
+.home .banner {
+    background: url("../img/purple-blue/banner.png") no-repeat center;
+    background-size: contain;
+}
+
+//儲值 icon 90px
+.home .moneyGroup .transaction li i {
+    background: url("../img/purple-blue/wallet_ic.png") no-repeat;
+    background-size: 500%;
+}
+
+//footer icon 60px
+footer .footerGroup li i {
+    background: url("../img/purple-blue/footer_ic.png") no-repeat;
+    background-size: 500%;
+}
+
+//footer 背景
+footer .footerGroup {
+    background: url("../img/purple-blue/footbg.png") no-repeat center;
+    background-size: cover;
+}
+
+//三角
+.home .mainGroup .gameGroup .gameItem .gameBox .triangle {
+    background: url("../img/purple-blue/trianglel.png") no-repeat center;
+    background-size: contain;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .btTriangle {
+    background: url("../img/purple-blue/triangler.png") no-repeat center;
+    background-size: contain;
+}
+
+
+.home .walletGroup .id .vip i {
+    background: url("../img/purple-blue/vip.png") no-repeat center;
+    background-size: contain;
+}
+
+// j add
+
+html body .home .mainGroup .gameGroup .gameItem .gameBox .triangle {
+    top: 0VW;
+    left: 0vw;
+}
+
+html body .home .mainGroup .gameGroup .gameItem .gameBox .btTriangle {
+    bottom: 0vw;
+    right: 0vw;
+}
+
+html body .home .banner {
+    width: 92%;
+    height: 43vw;
+    margin-top: 0;
+}
+
+//  j add
+svg {
+    &.speaker_svg {
+
+        .cls-1 {
+            fill: url("#Gradient1");
+        }
+
+        .stop1 {
+            stop-color: #a62295;
+        }
+
+        .stop2 {
+            stop-color: #926cd8;
+        }
+    }
+
+    &.message_svg {
+        .cls-1 {
+            fill: none;
+            stroke: #ffffff;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+        }
+
+        .cls-2 {
+            fill: #ffffff;
+        }
+    }
+
+    &.hot_svg {
+        .cls-1 {
+            fill: #ffffff;
+        }
+    }
+
+    &.vip_svg {
+        .cls-1 {
+            fill: #ffffff
+        }
+    }
+
+    &.home_svg,
+    &.money_svg,
+    &.details_svg,
+    &.history_svg,
+    &.member_svg {
+        .cls-1 {
+            fill: #ffffff;
+        }
+
+        .cls-2 {
+            fill: #ffffff;
+        }
+
+        .cls-3 {
+            fill: #ffffff;
+            stroke: #ffffff;
+        }
+    }
+
+    &.money_svg {
+        .cls-1 {
+            stroke: #ffffff;
+            stroke-miterlimit: 10;
+            stroke-width: .5px;
+        }
+    }
+}
+
+html body footer .footerGroup li {
+
+    &:hover,
+    &:active,
+    &.active {
+        >p {
+            color: #c7eedb;
+        }
+
+        svg {
+            .cls-1 {
+                fill: #9effd4;
+                stroke: none;
+            }
+
+            .cls-2 {
+                fill: #9effd4;
+            }
+
+            .cls-3 {
+                fill: #9effd4;
+                stroke: #7526a6;
+            }
+
+            &.money_svg {
+                .cls-1 {
+                    stroke: #9effd4;
+                }
+            }
+        }
+    }
+}

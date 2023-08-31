@@ -1,0 +1,308 @@
+.home .flexGroup .marqueeGroup {
+  background: #ffffff;
+  border-radius: 2vw;
+  border: 0.3vw solid #2c3847;
+}
+.home .flexGroup .marqueeGroup .marquee_ic {
+  width: 5vw;
+  height: 5vw;
+  margin: 0 1.5vw;
+}
+.home .flexGroup .marqueeGroup .marquee {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.home .flexGroup .marqueeGroup .marquee p {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding-left: 100%;
+  white-space: nowrap;
+  color: #293742;
+  -webkit-animation: marquee 10s linear 0s infinite;
+          animation: marquee 10s linear 0s infinite;
+}
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+@keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.home .flexGroup .hotBtn {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(#0bc27f), to(#007c87));
+  background: linear-gradient(to right, #0bc27f 0%, #007c87 100%);
+  border: 0.3vw solid #089896;
+  border-radius: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .moneyGroup .walletGroup .id .vip {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(#0bc27f), to(#007c87));
+  background: linear-gradient(to right, #0bc27f 0%, #007c87 100%);
+  border: 0.3vw solid #089896;
+  border-radius: 1vw;
+}
+
+aside .colorGroup button {
+  background: #293742;
+  -webkit-box-shadow: 0.1vw 0.1vw 2vw 0.1vw #818181;
+          box-shadow: 0.1vw 0.1vw 2vw 0.1vw #818181;
+}
+
+aside .colorGroup span {
+  color: #ffffff;
+}
+
+header .top {
+  background: #293742;
+  -webkit-box-shadow: 0.2vw 0.2vw 2vw 0.5vw #818181;
+          box-shadow: 0.2vw 0.2vw 2vw 0.5vw #818181;
+}
+
+header .top .circular::after {
+  background: #cbe9ff;
+}
+
+header .top .menuGroup .line .menu {
+  background: #ffffff;
+}
+
+header .top .menuGroup .line .menu::before {
+  background: #ffffff;
+}
+
+header .top .menuGroup .line .menu::after {
+  background: #ffffff;
+}
+
+header .top .logo p {
+  color: #ffffff;
+}
+
+.home .moneyGroup .walletGroup .id p {
+  color: #13588f;
+}
+
+.home .moneyGroup .walletGroup .money p {
+  color: #293742;
+}
+
+.home .moneyGroup .walletGroup .money i {
+  color: #293742;
+  border: 0.5vw solid #293742;
+}
+
+.home .moneyGroup .transaction li p {
+  color: #293742;
+}
+
+.home .mainGroup .market ul li {
+  border: 0.3vw solid #1e4f75;
+  background: #ffffff;
+}
+
+.home .mainGroup .market ul .active {
+  background: #cc3a25;
+}
+
+.home .mainGroup .market ul .active::after {
+  background: #293742;
+  -webkit-box-shadow: 0 0 2vw 0 #818181;
+          box-shadow: 0 0 2vw 0 #818181;
+}
+
+.home .mainGroup .market ul li p {
+  color: #ffffff;
+}
+
+.home .mainGroup .market ul li span {
+  color: #293742;
+}
+
+.home .mainGroup .market ul li em {
+  color: #097fda;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox {
+  background: #ffffff;
+  border: 0.3vw solid #1e4f75;
+  -webkit-box-shadow: 0vw 0vw 1vw 0vw #818181;
+          box-shadow: 0vw 0vw 1vw 0vw #818181;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#eb3e25), color-stop(55%, #ba331f), to(#9b2411));
+  background: linear-gradient(to top, #eb3e25 0%, #ba331f 55%, #9b2411 100%);
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover::before {
+  background: #d2d2d2;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover::after {
+  background: #ffffff;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover p {
+  color: #003e6e;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover span {
+  color: #303030;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .day p {
+  color: #0d5a97;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .day em {
+  color: #414141;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .team p {
+  color: #293742;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .team span {
+  color: #ff6d0c;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .vs {
+  color: #0068b9;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .gameName em {
+  color: #ff0000;
+}
+
+footer .footerGroup li p {
+  color: #ffffff;
+}
+
+footer .footerGroup li .personal::after {
+  background: #cbe9ff;
+}
+
+body .bg {
+  background: -webkit-gradient(linear, right top, left top, from(#ffffff), to(#d3ecff));
+  background: linear-gradient(to left, #ffffff 0%, #d3ecff 100%);
+  background-size: cover;
+}
+
+.home .banner {
+  background: url("../img/blue-skin/banner.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .moneyGroup .transaction li i {
+  background: url("../img/blue-skin/wallet_ic.png") no-repeat;
+  background-size: 500%;
+}
+
+footer .footerGroup {
+  background: url("../img/blue-skin/footbg.png") no-repeat center;
+  background-size: cover;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .triangle {
+  background: url("../img/blue-skin/trianglel.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .btTriangle {
+  background: url("../img/blue-skin/triangler.png") no-repeat center;
+  background-size: contain;
+}
+
+svg.message_svg .cls-1 {
+  fill: none;
+  stroke: #ffffff;
+  stroke-miterlimit: 10;
+  stroke-width: 3px;
+}
+svg.message_svg .cls-2 {
+  fill: #ffffff;
+}
+svg.speaker_svg {
+  width: 5vw;
+  height: 5vw;
+  margin: 0 1.5vw;
+}
+svg.speaker_svg .cls-1 {
+  fill: #1b486c;
+}
+svg.hot_svg {
+  width: 5vw;
+  height: 5vw;
+  -webkit-transform: translateY(-0.3vw);
+          transform: translateY(-0.3vw);
+}
+svg.hot_svg .cls-1 {
+  fill: #ffffff;
+}
+svg.vip_svg .cls-1 {
+  fill: #ffffff;
+}
+svg.home_svg, svg.money_svg, svg.details_svg, svg.history_svg, svg.member_svg {
+  width: 5vw;
+  height: 5vw;
+  margin-bottom: 1vw;
+  position: relative;
+}
+svg.home_svg .cls-1, svg.money_svg .cls-1, svg.details_svg .cls-1, svg.history_svg .cls-1, svg.member_svg .cls-1 {
+  fill: #ffffff;
+}
+svg.home_svg .cls-2, svg.money_svg .cls-2, svg.details_svg .cls-2, svg.history_svg .cls-2, svg.member_svg .cls-2 {
+  fill: #ffffff;
+}
+svg.home_svg .cls-3, svg.money_svg .cls-3, svg.details_svg .cls-3, svg.history_svg .cls-3, svg.member_svg .cls-3 {
+  fill: none;
+  stroke: #ffffff;
+}
+svg.money_svg .cls-1 {
+  stroke: #ffffff;
+  stroke-miterlimit: 10;
+  stroke-width: 0.5px;
+}
+
+.point {
+  position: relative;
+}
+.point::after {
+  background: #cbe9ff;
+}
+
+html body footer .footerGroup li:hover > p, html body footer .footerGroup li:active > p, html body footer .footerGroup li.active > p {
+  color: #ffffff;
+}
+html body footer .footerGroup li:hover svg .cls-1, html body footer .footerGroup li:active svg .cls-1, html body footer .footerGroup li.active svg .cls-1 {
+  fill: #f84e35;
+  stroke: none;
+}
+html body footer .footerGroup li:hover svg .cls-2, html body footer .footerGroup li:active svg .cls-2, html body footer .footerGroup li.active svg .cls-2 {
+  fill: #f84e35;
+}
+html body footer .footerGroup li:hover svg .cls-3, html body footer .footerGroup li:active svg .cls-3, html body footer .footerGroup li.active svg .cls-3 {
+  fill: #f84e35;
+  stroke: none;
+}

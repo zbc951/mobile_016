@@ -1,6 +1,7 @@
 //header
 $mainBg_1: #415556;
 
+
 //左側 市場列表
 $boxBG_1: linear-gradient(to top, #568f8f 0%, #5cc3c2 100%);
 $boxBG_2: #ffffff;
@@ -17,7 +18,7 @@ $triangleColor_1: #5bb0af;
 $mainColor_1: #ffffff;
 //wallet
 $mainColor_2: #0092a0;
-$mainColor_3: #415556;
+$mainColor_3: #415556; 
 
 //user
 $userColor_1: #0092a0;
@@ -49,6 +50,9 @@ $turnoverBg_2: #ffffff;
 $turnoverBg_3: #637c7d;
 $turnoverColor_1: #cc2427;
 $turnoverColor_2: #415556;
+
+//訊息提醒 8/28
+$subColor_6: #ff7576;
 
 //marquee
 @mixin marqueeStyle {
@@ -122,7 +126,7 @@ $turnoverColor_2: #415556;
 //顏色
 
 //aside
-html aside .colorGroup {
+html aside .colorGroup button {
     background: $mainBg_1;
     box-shadow: 0.1vw 0.1vw 2vw 0.1vw $boxshadow_1;
 }
@@ -136,8 +140,17 @@ header .top {
     background: $mainBg_1;
     box-shadow: 0.2vw 0.2vw 2vw 0.5vw $boxshadow_1;
 }
-header .top .menu p {
-    color: $mainColor_1;
+header .top .circular::after {
+    background: $subColor_6;
+}
+header .top .menuGroup .line .menu {
+    background: $mainColor_1;
+} 
+header .top .menuGroup .line .menu::before {
+    background: $mainColor_1;
+} 
+header .top .menuGroup .line .menu::after {
+    background: $mainColor_1;
 } 
 header .top .logo p {
     color: $mainColor_1;
@@ -220,6 +233,9 @@ header .top .logo p {
 footer .footerGroup li p {
     color: $mainColor_1;
 }
+footer .footerGroup li .personal::after {
+    background: $subColor_6;
+}
 
 
 //圖片
@@ -229,29 +245,14 @@ body .bg{
     background: url("../img/blue/bg.png") no-repeat center;
     background-size: cover;
 }
-//header訊息通知
-header .top .circular i {
-    background: url("../img/blue/circular.png") no-repeat center;
-    background-size: contain;
-}
 //banner
 .home .banner {
     background: url("../img/blue/banner.png") no-repeat center;
     background-size: contain;
 }
-//marquee icon
-.home .flexGroup .marqueeGroup .marquee_ic {
-    background: url("../img/blue/marquee_ic.png") no-repeat center;
-    background-size: contain;
-}
 //儲值 icon 90px
 .home .moneyGroup .transaction li i {
     background: url("../img/blue/wallet_ic.png") no-repeat;
-    background-size: 500%;
-}
-//footer icon 60px
-footer .footerGroup li i {
-    background: url("../img/blue/footer_ic.png") no-repeat;
     background-size: 500%;
 }
 //footer 背景
@@ -269,11 +270,117 @@ footer .footerGroup{
     background-size: contain;
 }
 
-.home .flexGroup .hotBtn i {
-    background: url("../img/blue/hot_ic.png") no-repeat center;
-    background-size: contain;
+
+svg {
+
+    &.message_svg {
+
+        .cls-1 {
+            fill: none;
+            stroke: #ffffff;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+        }
+        .cls-2{
+            fill: #ffffff;
+        }
+    }
+    &.speaker_svg {
+        width: 5vw;
+        height: 5vw;
+        margin: 0 1.5vw;
+
+        .cls-1 {
+            fill: #3d5d5f;
+        }
+    }
+
+    &.hot_svg {
+        width: 5vw;
+        height: 5vw;
+        transform: translateY(-0.3vw);
+
+        .cls-1 {
+            fill: #ffffff;
+        }
+    }
+    &.vip_svg {
+
+        .cls-1 {
+            fill: #ffffff
+        }
+    }
+    &.home_svg,
+    &.money_svg,
+    &.details_svg,
+    &.history_svg,
+    &.member_svg {
+        width: 5vw;
+        height: 5vw;
+        margin-bottom: 1vw;
+        position: relative;
+
+        .cls-1 {
+            fill: #ffffff;
+        }
+
+        .cls-2 {
+            fill: #ffffff;
+        }
+
+        .cls-3 {
+            fill: none;
+            stroke: #ffffff;
+        }
+    }
+
+    &.money_svg {
+        .cls-1 {
+            stroke: #ffffff;
+            stroke-miterlimit: 10;
+            stroke-width: .5px;
+        }
+    }
 }
-.home .walletGroup .id .vip i {
-    background: url("../img/blue/vip.png") no-repeat center;
-    background-size: contain;
+
+.point {
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 2vw;
+        height: 2vw;
+        border-radius: 50%;
+        position: absolute;
+        top: -1.5vw;
+        right: -1.8vw;
+        background: #ff7576;
+    }
+}
+
+html body footer .footerGroup li {
+
+    &:hover,
+    &:active,
+    &.active {
+        >p {
+            color: #ffffff;;
+        }
+
+        svg {
+            .cls-1 {
+                fill: #ffffff;
+                stroke: none;
+            }
+
+            .cls-2 {
+                fill: #ffffff;
+            }
+
+            .cls-3 {
+                fill: #ffffff;
+                stroke: none;
+            }
+        }
+    }
 }

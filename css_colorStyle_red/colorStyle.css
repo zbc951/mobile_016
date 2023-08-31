@@ -1,0 +1,328 @@
+.home .flexGroup .marqueeGroup {
+  background: -webkit-gradient(linear, left top, right top, from(#fff6d8), color-stop(39%, #faebbf), color-stop(68%, #dcc691), to(#fffae0));
+  background: linear-gradient(to right, #fff6d8 0%, #faebbf 39%, #dcc691 68%, #fffae0 100%);
+  border-radius: 2vw;
+  border: 0.2vw solid #fff6d8;
+  -webkit-box-shadow: 0.1vw 0.1vw 3vw 0.1vw rgba(0, 0, 0, 0.5);
+          box-shadow: 0.1vw 0.1vw 3vw 0.1vw rgba(0, 0, 0, 0.5);
+}
+.home .flexGroup .marqueeGroup .marquee_ic {
+  width: 5vw;
+  height: 5vw;
+  margin: 0 1.5vw;
+}
+.home .flexGroup .marqueeGroup .marquee {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.home .flexGroup .marqueeGroup .marquee p {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding-left: 100%;
+  white-space: nowrap;
+  color: #415556;
+  -webkit-animation: marquee 10s linear 0s infinite;
+          animation: marquee 10s linear 0s infinite;
+}
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+@keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.home .flexGroup .hotBtn {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(#2ecfdd), color-stop(87%, #00126c));
+  background: linear-gradient(to right, #2ecfdd 0%, #00126c 87%);
+  border: 0.2vw solid #054188;
+  border-radius: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .moneyGroup .walletGroup .id .vip {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(#2ecfdd), color-stop(87%, #00126c));
+  background: linear-gradient(to right, #2ecfdd 0%, #00126c 87%);
+  border: 0.2vw solid #246fcb;
+  border-radius: 1vw;
+}
+
+html aside .colorGroup button {
+  background: -webkit-gradient(linear, left top, right top, from(#440204), to(#93000b));
+  background: linear-gradient(to right, #440204 0%, #93000b 100%);
+  -webkit-box-shadow: 0.1vw 0.1vw 2vw 0.1vw #818181;
+          box-shadow: 0.1vw 0.1vw 2vw 0.1vw #818181;
+}
+
+html aside .colorGroup span {
+  color: #fff7de;
+}
+
+header .top {
+  background: -webkit-gradient(linear, left top, right top, from(#440204), to(#93000b));
+  background: linear-gradient(to right, #440204 0%, #93000b 100%);
+  -webkit-box-shadow: 0.2vw 0.2vw 2vw 0.5vw #818181;
+          box-shadow: 0.2vw 0.2vw 2vw 0.5vw #818181;
+}
+
+header .top .circular::after {
+  background: #ff6112;
+}
+
+header .top .menuGroup .line .menu {
+  background: #fff1c8;
+}
+
+header .top .menuGroup .line .menu::before {
+  background: #fff1c8;
+}
+
+header .top .menuGroup .line .menu::after {
+  background: #fff1c8;
+}
+
+header .top .logo p {
+  color: #fff1c8;
+}
+
+.home .moneyGroup .walletGroup .id p {
+  color: #c30d21;
+}
+
+.home .moneyGroup .walletGroup .money p {
+  color: #620003;
+}
+
+.home .moneyGroup .walletGroup .money i {
+  color: #620003;
+  border: 0.5vw solid #620003;
+}
+
+.home .moneyGroup .transaction li p {
+  color: #620003;
+}
+
+.home .mainGroup .market ul li {
+  border: 0.3vw solid #450204;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffbfa5), to(#fff9f6));
+  background: linear-gradient(to top, #ffbfa5 0%, #fff9f6 100%);
+}
+
+.home .mainGroup .market ul .active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#440204), to(#c51a2d));
+  background: linear-gradient(to top, #440204 0%, #c51a2d 100%);
+}
+
+.home .mainGroup .market ul .active::after {
+  background: -webkit-gradient(linear, left top, right top, from(#fcf4db), color-stop(39%, #fff1c9), color-stop(68%, #ddcb9f), to(#fff8e0));
+  background: linear-gradient(to right, #fcf4db 0%, #fff1c9 39%, #ddcb9f 68%, #fff8e0 100%);
+  -webkit-box-shadow: 0 0 2vw 0 #818181;
+          box-shadow: 0 0 2vw 0 #818181;
+}
+
+.home .mainGroup .market ul li p {
+  color: #fff7de;
+}
+
+.home .mainGroup .market ul li span {
+  color: #b30a33;
+}
+
+.home .mainGroup .market ul li em {
+  color: #ae0013;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox {
+  background: #ffffff;
+  border: 0.3vw solid #450204;
+  -webkit-box-shadow: 0vw 0vw 1vw 0vw #818181;
+          box-shadow: 0vw 0vw 1vw 0vw #818181;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#d31025), color-stop(53%, #65090c), to(#440204));
+  background: linear-gradient(to top, #d31025 0%, #65090c 53%, #440204 100%);
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover::before {
+  background: #dadada;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover::after {
+  background: #ffffff;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover p {
+  color: #212121;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover span {
+  color: #000d3f;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .day p {
+  color: #982d38;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .day em {
+  color: #595959;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .team p {
+  color: #2b0002;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .team span {
+  color: #ff6112;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .vs {
+  color: #484848;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .gameName em {
+  color: #04abce;
+}
+
+footer .footerGroup li p {
+  color: #fff1c8;
+}
+
+footer .footerGroup li .personal::after {
+  background: #ff6112;
+}
+
+body .bg {
+  background: url("../img/red/bg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.home .banner {
+  background: url("../img/red/banner.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .moneyGroup .transaction li i {
+  background: url("../img/red/walletIc.png") no-repeat;
+  background-size: 500%;
+}
+
+footer .footerGroup {
+  background: url("../img/red/footbg.png") no-repeat center;
+  background-size: cover;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .triangle {
+  background: url("../img/red/trianglel.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .btTriangle {
+  background: url("../img/red/trianglrl.png") no-repeat center;
+  background-size: contain;
+}
+
+svg.message_svg .cls-1 {
+  fill: none;
+  stroke: #fff1c8;
+  stroke-miterlimit: 10;
+  stroke-width: 3px;
+}
+svg.message_svg .cls-2 {
+  fill: #fff1c8;
+}
+svg.speaker_svg {
+  width: 5vw;
+  height: 5vw;
+  margin: 0 1.5vw;
+}
+svg.speaker_svg .cls-1 {
+  fill: url("#Gradient1");
+}
+svg.speaker_svg .stop1 {
+  stop-color: #b4020f;
+}
+svg.speaker_svg .stop3 {
+  stop-color: #700209;
+}
+svg.hot_svg {
+  width: 5vw;
+  height: 5vw;
+  -webkit-transform: translateY(-0.3vw);
+          transform: translateY(-0.3vw);
+}
+svg.hot_svg .cls-1 {
+  fill: #ffffff;
+}
+svg.vip_svg .cls-1 {
+  fill: #ffffff;
+}
+svg.home_svg, svg.money_svg, svg.details_svg, svg.history_svg, svg.member_svg {
+  width: 5vw;
+  height: 5vw;
+  margin-bottom: 1vw;
+  position: relative;
+}
+svg.home_svg .cls-1, svg.money_svg .cls-1, svg.details_svg .cls-1, svg.history_svg .cls-1, svg.member_svg .cls-1 {
+  fill: #fff1c8;
+}
+svg.home_svg .cls-2, svg.money_svg .cls-2, svg.details_svg .cls-2, svg.history_svg .cls-2, svg.member_svg .cls-2 {
+  fill: #fff1c8;
+}
+svg.home_svg .cls-3, svg.money_svg .cls-3, svg.details_svg .cls-3, svg.history_svg .cls-3, svg.member_svg .cls-3 {
+  fill: none;
+  stroke: #fff1c8;
+}
+svg.money_svg .cls-1 {
+  stroke: #fff1c8;
+  stroke-miterlimit: 10;
+  stroke-width: 0.5px;
+}
+
+.point {
+  position: relative;
+}
+.point::after {
+  content: "";
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  position: absolute;
+  top: -1.5vw;
+  right: -1.8vw;
+  background: #ea6300;
+}
+
+html body footer .footerGroup li:hover > p, html body footer .footerGroup li:active > p, html body footer .footerGroup li.active > p {
+  color: #fff1c8;
+}
+html body footer .footerGroup li:hover svg .cls-1, html body footer .footerGroup li:active svg .cls-1, html body footer .footerGroup li.active svg .cls-1 {
+  fill: #fff1c8;
+  stroke: none;
+}
+html body footer .footerGroup li:hover svg .cls-2, html body footer .footerGroup li:active svg .cls-2, html body footer .footerGroup li.active svg .cls-2 {
+  fill: #fff1c8;
+}
+html body footer .footerGroup li:hover svg .cls-3, html body footer .footerGroup li:active svg .cls-3, html body footer .footerGroup li.active svg .cls-3 {
+  fill: #fff1c8;
+  stroke: none;
+}

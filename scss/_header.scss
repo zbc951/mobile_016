@@ -25,15 +25,48 @@ header {
             cursor: pointer;
             
             //選單
-            &.menu {
+            &.menuGroup {
                 width: auto;
                 height: auto;
                 
-                p {
-                    width: pxTovw(60);
-                    height: pxTovw(60);
-                    font-size: pxTorem(20);
+                .line {
+                    width: 5vw;
+                    height: 5vw;
+                    cursor: pointer;
+                    display: block;
+                    padding: 16px;
+                    position: relative;
                     // color: $mainColor_1;
+
+                    .menu {
+                        display: block;
+                        height: 0.8vw;
+                        width: 5vw;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 0;
+                        // transition: background ease .3s, top ease .3s .3s, transform ease .3s;
+
+                        &::before {
+                            content: '';
+                            height: 0.8vw;
+                            width: 5vw;
+                            position: absolute;
+                            top: -1.5vw;
+                            left: 0;
+                        }
+
+                        &::after {
+                            content: '';
+                            height: 0.8vw;
+                            width: 5vw;
+                            position: absolute;
+                            top: 1.5vw;
+                            left: 0;
+                        }
+                    }
+
                 }
             }
 
@@ -53,10 +86,21 @@ header {
             &.circular {
                 width: auto;
                 height: auto;
+                position: relative;
 
-                i {
-                    width: pxTovw(60);
-                    height: pxTovw(60);
+                &::after {
+                    content: "";
+                    width: 2vw;
+                    height: 2vw;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: -1.5vw;
+                    right: -1.8vw;
+                }
+
+                .message_svg {
+                    width: 5vw;
+                    height: 5vw;
                 }
             }
         }

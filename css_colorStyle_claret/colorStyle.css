@@ -1,0 +1,317 @@
+.home .flexGroup .marqueeGroup {
+  background: #ffffff;
+  border-radius: 2vw;
+  border: 0.3vw solid #4e0008;
+}
+.home .flexGroup .marqueeGroup .marquee_ic {
+  width: 5vw;
+  height: 5vw;
+  margin: 0 1.5vw;
+}
+.home .flexGroup .marqueeGroup .marquee {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.home .flexGroup .marqueeGroup .marquee p {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding-left: 100%;
+  white-space: nowrap;
+  color: #002f93;
+  -webkit-animation: marquee 10s linear 0s infinite;
+          animation: marquee 10s linear 0s infinite;
+}
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+@keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.home .flexGroup .hotBtn {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(#00d1e8), to(#002f93));
+  background: linear-gradient(to right, #00d1e8 0%, #002f93 100%);
+  border: 0.3vw solid #0468af;
+  border-radius: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .moneyGroup .walletGroup .id .vip {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(#79e000), to(#007d18));
+  background: linear-gradient(to right, #79e000 0%, #007d18 100%);
+  border: 0.3vw solid #049700;
+  border-radius: 1vw;
+}
+
+aside .colorGroup button {
+  background: -webkit-gradient(linear, left top, right top, from(#bf0014), to(#880002));
+  background: linear-gradient(to right, #bf0014 0%, #880002 100%);
+  -webkit-box-shadow: 0.1vw 0.1vw 2vw 0.1vw #818181;
+          box-shadow: 0.1vw 0.1vw 2vw 0.1vw #818181;
+}
+
+aside .colorGroup span {
+  color: #ffffff;
+}
+
+header .top {
+  background: -webkit-gradient(linear, left top, right top, from(#bf0014), to(#880002));
+  background: linear-gradient(to right, #bf0014 0%, #880002 100%);
+  -webkit-box-shadow: 0.2vw 0.2vw 2vw 0.5vw #818181;
+          box-shadow: 0.2vw 0.2vw 2vw 0.5vw #818181;
+}
+
+header .top .circular::after {
+  background: #ff7576;
+}
+
+header .top .menuGroup .line .menu {
+  background: #ffffff;
+}
+
+header .top .menuGroup .line .menu::before {
+  background: #ffffff;
+}
+
+header .top .menuGroup .line .menu::after {
+  background: #ffffff;
+}
+
+header .top .logo p {
+  color: #ffffff;
+}
+
+.home .moneyGroup .walletGroup .id p {
+  color: #08a0c8;
+}
+
+.home .moneyGroup .walletGroup .money p {
+  color: #bf0014;
+}
+
+.home .moneyGroup .walletGroup .money i {
+  color: #bf0014;
+  border: 0.5vw solid #bf0014;
+}
+
+.home .moneyGroup .transaction li p {
+  color: #900816;
+}
+
+.home .mainGroup .market ul li {
+  border: 0.3vw solid #6b1819;
+  background: #ffffff;
+}
+
+.home .mainGroup .market ul .active {
+  background: #bf0014;
+}
+
+.home .mainGroup .market ul .active::after {
+  background: #6b1819;
+  -webkit-box-shadow: 0 0 2vw 0 #818181;
+          box-shadow: 0 0 2vw 0 #818181;
+}
+
+.home .mainGroup .market ul li p {
+  color: #ffffff;
+}
+
+.home .mainGroup .market ul li span {
+  color: #01389a;
+}
+
+.home .mainGroup .market ul li em {
+  color: #00b9d5;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox {
+  background: -webkit-gradient(linear, left top, right top, from(#fafdff), color-stop(32%, #f0f5ff), color-stop(69%, #fafdff), color-stop(99%, #fafdff));
+  background: linear-gradient(to right, #fafdff 0%, #f0f5ff 32%, #fafdff 69%, #fafdff 99%);
+  border: 0.3vw solid #6b1819;
+  -webkit-box-shadow: 0vw 0vw 1vw 0vw #818181;
+          box-shadow: 0vw 0vw 1vw 0vw #818181;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#e81100), color-stop(55%, #b00a00), to(#a40011));
+  background: linear-gradient(to top, #e81100 0%, #b00a00 55%, #a40011 100%);
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover::before {
+  background: #acacac;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover::after {
+  background: #ffffff;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover p {
+  color: #002f93;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover span {
+  color: #342d2e;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .day p {
+  color: #676767;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .day em {
+  color: #003a99;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .team p {
+  color: #440b11;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .team span {
+  color: #ea6300;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .vs {
+  color: #ff001b;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .gameName em {
+  color: #003ce8;
+}
+
+footer .footerGroup li p {
+  color: #ffffff;
+}
+
+footer .footerGroup li .personal::after {
+  background: #ff7576;
+}
+
+body .bg {
+  background: url("../img/Claret/bg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.home .banner {
+  background: url("../img/Claret/banner.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .moneyGroup .transaction li i {
+  background: url("../img/Claret/walletic.png") no-repeat;
+  background-size: 500%;
+}
+
+footer .footerGroup {
+  background: url("../img/Claret/footbg.png") no-repeat center;
+  background-size: cover;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .triangle {
+  background: url("../img/Claret/trianglel.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .btTriangle {
+  background: url("../img/Claret/triangler.png") no-repeat center;
+  background-size: contain;
+}
+
+svg.message_svg .cls-1 {
+  fill: none;
+  stroke: #ffffff;
+  stroke-miterlimit: 10;
+  stroke-width: 3px;
+}
+svg.message_svg .cls-2 {
+  fill: #ffffff;
+}
+svg.speaker_svg {
+  width: 5vw;
+  height: 5vw;
+  margin: 0 1.5vw;
+}
+svg.speaker_svg .cls-1 {
+  fill: #002f93;
+}
+svg.hot_svg {
+  width: 5vw;
+  height: 5vw;
+  -webkit-transform: translateY(-0.3vw);
+          transform: translateY(-0.3vw);
+}
+svg.hot_svg .cls-1 {
+  fill: #ffffff;
+}
+svg.vip_svg .cls-1 {
+  fill: #ffffff;
+}
+svg.home_svg, svg.money_svg, svg.details_svg, svg.history_svg, svg.member_svg {
+  width: 5vw;
+  height: 5vw;
+  margin-bottom: 1vw;
+  position: relative;
+}
+svg.home_svg .cls-1, svg.money_svg .cls-1, svg.details_svg .cls-1, svg.history_svg .cls-1, svg.member_svg .cls-1 {
+  fill: #ffffff;
+}
+svg.home_svg .cls-2, svg.money_svg .cls-2, svg.details_svg .cls-2, svg.history_svg .cls-2, svg.member_svg .cls-2 {
+  fill: #ffffff;
+}
+svg.home_svg .cls-3, svg.money_svg .cls-3, svg.details_svg .cls-3, svg.history_svg .cls-3, svg.member_svg .cls-3 {
+  fill: none;
+  stroke: #ffffff;
+}
+svg.money_svg .cls-1 {
+  stroke: #ffffff;
+  stroke-miterlimit: 10;
+  stroke-width: 0.5px;
+}
+
+.point {
+  position: relative;
+}
+.point::after {
+  content: "";
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  position: absolute;
+  top: -1.5vw;
+  right: -1.8vw;
+  background: #ff7576;
+}
+
+html body footer .footerGroup li:hover > p, html body footer .footerGroup li:active > p, html body footer .footerGroup li.active > p {
+  color: #ffffff;
+}
+html body footer .footerGroup li:hover svg .cls-1, html body footer .footerGroup li:active svg .cls-1, html body footer .footerGroup li.active svg .cls-1 {
+  fill: #ffffff;
+  stroke: none;
+}
+html body footer .footerGroup li:hover svg .cls-2, html body footer .footerGroup li:active svg .cls-2, html body footer .footerGroup li.active svg .cls-2 {
+  fill: #ffffff;
+}
+html body footer .footerGroup li:hover svg .cls-3, html body footer .footerGroup li:active svg .cls-3, html body footer .footerGroup li.active svg .cls-3 {
+  fill: #ffffff;
+  stroke: none;
+}

@@ -1,0 +1,323 @@
+.home .flexGroup .marqueeGroup {
+  background: #ffffff;
+  border-radius: 2vw;
+  border: 0.3vw solid transparent;
+  -webkit-box-shadow: 0.1vw 0.1vw 3vw 0.1vw #7fc5b0;
+          box-shadow: 0.1vw 0.1vw 3vw 0.1vw #7fc5b0;
+}
+.home .flexGroup .marqueeGroup .marquee {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.home .flexGroup .marqueeGroup .marquee p {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding-left: 100%;
+  white-space: nowrap;
+  color: #006058;
+  -webkit-animation: marquee 10s linear 0s infinite;
+          animation: marquee 10s linear 0s infinite;
+}
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+@keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.home .flexGroup .hotBtn {
+  color: #ffffff;
+  background: -webkit-gradient(linear, right top, left top, from(#df4400), to(#a52b00));
+  background: linear-gradient(to left, #df4400 0%, #a52b00 100%);
+  border: 0.3vw solid #ffeadf;
+  border-radius: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .moneyGroup .walletGroup .id .vip {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(#fad370), to(#db4f01));
+  background: linear-gradient(to right, #fad370 0%, #db4f01 100%);
+  border: 0.3vw solid #c6420a;
+  border-radius: 1vw;
+}
+
+aside .colorGroup button {
+  background: #a93319;
+  -webkit-box-shadow: 0.1vw 0.1vw 2vw 0.1vw #4c6689;
+          box-shadow: 0.1vw 0.1vw 2vw 0.1vw #4c6689;
+}
+
+aside .colorGroup span {
+  color: #ffffff;
+}
+
+header .top {
+  background: #a93319;
+  -webkit-box-shadow: 0.2vw 0.2vw 2vw 0.5vw #4c6689;
+          box-shadow: 0.2vw 0.2vw 2vw 0.5vw #4c6689;
+}
+
+header .top .circular::after {
+  background: #0fbeb8;
+}
+
+header .top .menuGroup .line .menu {
+  background: #ffffff;
+}
+
+header .top .menuGroup .line .menu::before {
+  background: #ffffff;
+}
+
+header .top .menuGroup .line .menu::after {
+  background: #ffffff;
+}
+
+header .top .logo p {
+  color: #ffffff;
+}
+
+.home .moneyGroup .walletGroup .id p {
+  color: #ffffff;
+}
+
+.home .moneyGroup .walletGroup .money p {
+  color: #ffffff;
+}
+
+.home .moneyGroup .walletGroup .money i {
+  color: #f8ca69;
+  border: 0.5vw solid #f8ca69;
+}
+
+.home .moneyGroup .transaction li p {
+  color: #f8ca69;
+}
+
+.home .mainGroup .market ul li {
+  border: 0.3vw solid #912811;
+  background: #ffffff;
+}
+
+.home .mainGroup .market ul .active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#005d55), to(#0fb9b6));
+  background: linear-gradient(to top, #005d55 0%, #0fb9b6 100%);
+  border-color: #ffc87a;
+}
+
+.home .mainGroup .market ul .active::after {
+  background: #f6cb5b;
+  -webkit-box-shadow: 0 0 2vw 0 #4c6689;
+          box-shadow: 0 0 2vw 0 #4c6689;
+  border-bottom: solid 0.2vw #4c6689;
+}
+
+.home .mainGroup .market ul li p {
+  color: #ffffff;
+}
+
+.home .mainGroup .market ul li span {
+  color: #9e2b00;
+}
+
+.home .mainGroup .market ul li em {
+  color: #f66a11;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox {
+  background: #ffffff;
+  border: 0.3vw solid #912811;
+  -webkit-box-shadow: 0vw 0vw 1vw 0vw #4c6689;
+          box-shadow: 0vw 0vw 1vw 0vw #4c6689;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#dd702d), color-stop(43%, #e25500), to(#a93319));
+  background: linear-gradient(to top, #dd702d 0%, #e25500 43%, #a93319 100%);
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover::before {
+  background: #b2b2b2;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover::after {
+  background: #ffffff;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover p {
+  color: #c15f24;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .turnover span {
+  color: #444444;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .day p {
+  color: #808080;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .day em {
+  color: #25a19f;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .team p {
+  color: #a93319;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .team span {
+  color: #7347e2;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .teamGroup .vs {
+  color: #ee2b00;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .date .gameName em {
+  color: #00c7c2;
+}
+
+footer .footerGroup li p {
+  color: #ffffff;
+}
+
+footer .footerGroup li .point::after {
+  background: #0fbeb8;
+}
+
+body .bg {
+  background: url("../img/orange-green/bg.png") no-repeat center;
+  background-size: cover;
+}
+
+header .top .circular i {
+  background: url("../img/orange-green/circular.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .banner {
+  background: url("../img/orange-green/banner.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .moneyGroup .transaction li i {
+  background: url("../img/orange-green/wallet_ic.png") no-repeat;
+  background-size: 500%;
+}
+
+footer .footerGroup li i {
+  background: url("../img/orange-green/footer_ic.png") no-repeat;
+  background-size: 500%;
+}
+
+footer .footerGroup {
+  background: url("../img/orange-green/footbg.png") no-repeat center;
+  background-size: cover;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .triangle {
+  background: url("../img/orange-green/trianglel.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .mainGroup .gameGroup .gameItem .gameBox .btTriangle {
+  background: url("../img/orange-green/triangler.png") no-repeat center;
+  background-size: contain;
+}
+
+.home .walletGroup .id .vip i {
+  background: url("../img/orange-green/vip.png") no-repeat center;
+  background-size: contain;
+}
+
+html body .home .mainGroup .gameGroup .gameItem .gameBox .triangle {
+  top: 0VW;
+  left: 0vw;
+}
+
+html body .home .mainGroup .gameGroup .gameItem .gameBox .btTriangle {
+  bottom: 0vw;
+  right: 0vw;
+}
+
+html body .home .banner {
+  width: 92%;
+  height: 43vw;
+  margin-top: 0;
+}
+
+svg.speaker_svg .cls-1 {
+  fill: url("#Gradient1");
+}
+svg.speaker_svg .stop1 {
+  stop-color: #a93319;
+}
+svg.speaker_svg .stop3 {
+  stop-color: #cc6600;
+}
+svg.message_svg .cls-1 {
+  fill: none;
+  stroke: #ffffff;
+  stroke-miterlimit: 10;
+  stroke-width: 3px;
+}
+svg.message_svg .cls-2 {
+  fill: #ffffff;
+}
+svg.hot_svg .cls-1 {
+  fill: #ffffff;
+}
+svg.vip_svg .cls-1 {
+  fill: #ffffff;
+}
+svg.home_svg .cls-1, svg.money_svg .cls-1, svg.details_svg .cls-1, svg.history_svg .cls-1, svg.member_svg .cls-1 {
+  fill: #ffffff;
+}
+svg.home_svg .cls-2, svg.money_svg .cls-2, svg.details_svg .cls-2, svg.history_svg .cls-2, svg.member_svg .cls-2 {
+  fill: #ffffff;
+}
+svg.home_svg .cls-3, svg.money_svg .cls-3, svg.details_svg .cls-3, svg.history_svg .cls-3, svg.member_svg .cls-3 {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+svg.money_svg .cls-1 {
+  stroke: #ffffff;
+  stroke-miterlimit: 10;
+  stroke-width: 0.5px;
+}
+
+html body footer .footerGroup li:hover > p, html body footer .footerGroup li:active > p, html body footer .footerGroup li.active > p {
+  color: #ffc427;
+}
+html body footer .footerGroup li:hover svg .cls-1, html body footer .footerGroup li:active svg .cls-1, html body footer .footerGroup li.active svg .cls-1 {
+  fill: #ffc427;
+  stroke: none;
+}
+html body footer .footerGroup li:hover svg .cls-2, html body footer .footerGroup li:active svg .cls-2, html body footer .footerGroup li.active svg .cls-2 {
+  fill: #ffc427;
+}
+html body footer .footerGroup li:hover svg .cls-3, html body footer .footerGroup li:active svg .cls-3, html body footer .footerGroup li.active svg .cls-3 {
+  fill: #ffc427;
+  stroke: #ffffff;
+}
+html body footer .footerGroup li:hover svg.money_svg .cls-1, html body footer .footerGroup li:active svg.money_svg .cls-1, html body footer .footerGroup li.active svg.money_svg .cls-1 {
+  stroke: #ffc427;
+}

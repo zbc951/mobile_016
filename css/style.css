@@ -144,6 +144,66 @@ aside .colorGroup ul .blue {
   color: #ffffff;
 }
 
+aside .colorGroup ul .purple-gray {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fd4cc1), color-stop(55%, #a61052), to(#640128));
+  background: linear-gradient(to top, #fd4cc1 0%, #a61052 55%, #640128 100%);
+  color: #ffffff;
+}
+
+aside .colorGroup ul .purple-red {
+  background: -webkit-gradient(linear, left top, right top, from(#ff0000), to(#4f01ff));
+  background: linear-gradient(to right, #ff0000 0%, #4f01ff 100%);
+  color: #ffffff;
+}
+
+aside .colorGroup ul .yellow-blue {
+  background: #f2b11a;
+  color: #ffffff;
+}
+
+aside .colorGroup ul .purple-blue {
+  background: #7526a6;
+  color: #ffffff;
+}
+
+aside .colorGroup ul .purple {
+  background: -webkit-gradient(linear, left top, right top, from(#c696f7), to(#5f97ff));
+  background: linear-gradient(to right, #c696f7 0%, #5f97ff 100%);
+  color: #ffffff;
+}
+
+aside .colorGroup ul .orange-gray {
+  background: #f89720;
+  color: #ffffff;
+}
+
+aside .colorGroup ul .orange-blue {
+  background: -webkit-gradient(linear, right top, left top, from(#ff3300), to(#fdaa59));
+  background: linear-gradient(to left, #ff3300 0%, #fdaa59 100%);
+  color: #ffffff;
+}
+
+aside .colorGroup ul .blue-skin {
+  background: #1e4f75;
+  color: #ffffff;
+}
+
+aside .colorGroup ul .blue-gold {
+  background: -webkit-gradient(linear, left top, right top, from(#0a0e29), to(#2494a2));
+  background: linear-gradient(to right, #0a0e29 0%, #2494a2 100%);
+  color: #ffffff;
+}
+
+aside .colorGroup ul .orange-gold {
+  background: #ff6c2a;
+  color: #ffffff;
+}
+
+aside .colorGroup ul .orange-green {
+  background: #a93319;
+  color: #ffffff;
+}
+
 html {
   width: 100%;
   height: 100%;
@@ -184,14 +244,43 @@ html body header .top li {
   display: inline-block;
   cursor: pointer;
 }
-html body header .top li.menu {
+html body header .top li.menuGroup {
   width: auto;
   height: auto;
 }
-html body header .top li.menu p {
+html body header .top li.menuGroup .line {
   width: 5vw;
   height: 5vw;
-  font-size: 1.25rem;
+  cursor: pointer;
+  display: block;
+  padding: 16px;
+  position: relative;
+}
+html body header .top li.menuGroup .line .menu {
+  display: block;
+  height: 0.8vw;
+  width: 5vw;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+}
+html body header .top li.menuGroup .line .menu::before {
+  content: "";
+  height: 0.8vw;
+  width: 5vw;
+  position: absolute;
+  top: -1.5vw;
+  left: 0;
+}
+html body header .top li.menuGroup .line .menu::after {
+  content: "";
+  height: 0.8vw;
+  width: 5vw;
+  position: absolute;
+  top: 1.5vw;
+  left: 0;
 }
 html body header .top li.logo {
   width: auto;
@@ -203,8 +292,18 @@ html body header .top li.logo p {
 html body header .top li.circular {
   width: auto;
   height: auto;
+  position: relative;
 }
-html body header .top li.circular i {
+html body header .top li.circular::after {
+  content: "";
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  position: absolute;
+  top: -1.5vw;
+  right: -1.8vw;
+}
+html body header .top li.circular .message_svg {
   width: 5vw;
   height: 5vw;
 }
@@ -239,6 +338,11 @@ html body .home .flexGroup .marqueeGroup {
   display: -ms-flexbox;
   display: flex;
 }
+html body .home .flexGroup .speaker_svg {
+  width: 5vw;
+  height: 5vw;
+  margin: 0 1.5vw;
+}
 html body .home .flexGroup .hotBtn {
   width: 22vw;
   height: auto;
@@ -254,8 +358,8 @@ html body .home .flexGroup .hotBtn {
   padding: 0.8vw 1vw;
   cursor: pointer;
 }
-html body .home .flexGroup .hotBtn i {
-  width: 5vw;
+html body .home .flexGroup .hotBtn .hot_svg {
+  width: 6vw;
   height: 5vw;
 }
 html body .home .flexGroup .hotBtn p {
@@ -304,14 +408,16 @@ html body .home .moneyGroup .walletGroup .id .vip {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 1.2vw;
 }
-html body .home .moneyGroup .walletGroup .id .vip i {
-  width: 100%;
-  height: 100%;
+html body .home .moneyGroup .walletGroup .id .vip .vip_svg {
+  width: 7vw;
+  height: 5vw;
 }
 html body .home .moneyGroup .walletGroup .id .vip em {
   font-size: 1rem;
@@ -354,7 +460,7 @@ html body .home .moneyGroup .transaction {
           justify-content: space-between;
 }
 html body .home .moneyGroup .transaction li {
-  width: 100%;
+  width: 12vw;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -369,7 +475,6 @@ html body .home .moneyGroup .transaction li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 2vw;
   cursor: pointer;
 }
 html body .home .moneyGroup .transaction li i {
@@ -486,6 +591,8 @@ html body .home .mainGroup .gameGroup .gameItem .gameBox .triangle {
   position: absolute;
   top: -0.2vw;
   left: -0.2vw;
+  -webkit-filter: drop-shadow(2px 2px 4px #b1b1b1);
+          filter: drop-shadow(2px 2px 4px #b1b1b1);
 }
 html body .home .mainGroup .gameGroup .gameItem .gameBox .turnover {
   width: 22vw;
@@ -626,6 +733,8 @@ html body .home .mainGroup .gameGroup .gameItem .gameBox .btTriangle {
   position: absolute;
   bottom: -0.2vw;
   right: -0.2vw;
+  -webkit-filter: drop-shadow(-2px -2px 4px #b1b1b1);
+          filter: drop-shadow(-2px -2px 4px #b1b1b1);
 }
 html body footer {
   width: 100%;
@@ -668,28 +777,26 @@ html body footer .footerGroup li {
   margin-top: 5vw;
   cursor: pointer;
 }
-html body footer .footerGroup li i {
-  width: 5vw;
-  height: 5vw;
-  margin-bottom: 1vw;
+html body footer .footerGroup li .point {
+  position: relative;
 }
-html body footer .footerGroup li i.homeIc {
-  background-position-x: 0%;
-}
-html body footer .footerGroup li i.market {
-  background-position-x: 25%;
-}
-html body footer .footerGroup li i.deal {
-  background-position-x: 50%;
-}
-html body footer .footerGroup li i.accounts {
-  background-position-x: 75%;
-}
-html body footer .footerGroup li i.personal {
-  background-position-x: 100%;
+html body footer .footerGroup li .point::after {
+  content: "";
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  position: absolute;
+  top: -1.5vw;
+  right: -1.8vw;
 }
 html body footer .footerGroup li p {
   font-size: 0.75rem;
+}
+html body footer .footerGroup li svg {
+  width: 6vw;
+  height: 6vw;
+  margin-bottom: 1vw;
+  position: relative;
 }
 html .bg {
   width: 100%;
@@ -703,18 +810,26 @@ html aside {
   width: 100%;
   height: auto;
   position: fixed;
-  bottom: 15vw;
-  left: 2vw;
+  bottom: 15.5vw;
+  left: 4vw;
   z-index: 999;
 }
 html aside .colorGroup {
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html aside .colorGroup button {
   width: 10vw;
   height: 10vw;
   border-radius: 50%;
-  cursor: pointer;
   position: relative;
 }
-html aside .colorGroup span {
+html aside .colorGroup button span {
   font-size: 0.75rem;
   font-weight: bold;
   position: absolute;
@@ -724,11 +839,12 @@ html aside .colorGroup span {
           transform: translate(-50%, -50%);
 }
 html aside .colorGroup ul {
-  width: 100%;
+  width: 80%;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(6vw, 1fr));
+  gap: 1vw;
   position: absolute;
   top: 50%;
   left: 12vw;

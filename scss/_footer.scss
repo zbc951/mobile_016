@@ -13,7 +13,7 @@ footer {
         align-items: center;
         justify-content: space-between;
         position: relative;
-        
+
         li {
             width: 100%;
             height: auto;
@@ -23,32 +23,30 @@ footer {
             justify-content: center;
             margin-top: 5vw;
             cursor: pointer;
-            
-            i {
-                width: 5vw;
-                height: 5vw;
-                margin-bottom: 1vw;
 
-                &.homeIc {
-                    background-position-x: 0%;
-                }
-                &.market {
-                    background-position-x: 25%;
-                }
-                &.deal {
-                    background-position-x: 50%;
-                }
-                &.accounts {
-                    background-position-x: 75%;
-                }
-                &.personal {
-                    background-position-x: 100%;
+            .point {
+                position: relative;
+
+                &::after {
+                    content: "";
+                    width: 2vw;
+                    height: 2vw;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: -1.5vw;
+                    right: -1.8vw;
                 }
             }
 
             p {
                 font-size: 0.75rem;
                 // color: $mainColor_1;
+            }
+            svg {
+                width: 6vw;
+                height: 6vw;
+                margin-bottom: 1vw;
+                position: relative;
             }
         }
     }
